@@ -1,0 +1,223 @@
+{
+    "domain": "Information Technology",
+    "prompt": "Analyze the impact of 5G technology on IoT scalability and speed. Discuss benefits and challenges 5G brings to IoT devices and networks, including security implications.",
+    "rubric": {
+        "rubric_id": "rub_it_0006",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Conceptual Understanding",
+                "description": "Demonstrates deep understanding of the topic and related concepts.",
+                "performance_descriptors": {
+                    "excellent": "Shows precise and in-depth understanding with clear theoretical support.",
+                    "good": "Understands key concepts well with minor gaps.",
+                    "average": "Adequate explanation with some inaccuracies.",
+                    "needs_improvement": "Surface-level or confused understanding.",
+                    "poor": "Major misunderstandings or misrepresentations."
+                },
+                "weight": 15
+            },
+            {
+                "criterion_id": "c2",
+                "name": "Application to Real-World Scenarios",
+                "description": "Applies concepts meaningfully to examples or scenarios.",
+                "performance_descriptors": {
+                    "excellent": "Uses insightful and relevant examples clearly linked to concepts.",
+                    "good": "Examples mostly appropriate with some gaps in explanation.",
+                    "average": "Examples present but superficial or unclear connections.",
+                    "needs_improvement": "Vague or generic examples.",
+                    "poor": "No real-world application."
+                },
+                "weight": 15
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Critical Evaluation",
+                "description": "Analyzes challenges, limitations, or trade-offs thoughtfully.",
+                "performance_descriptors": {
+                    "excellent": "Provides insightful, research-backed critical evaluation.",
+                    "good": "Reasonable evaluation but less depth.",
+                    "average": "Mentions challenges superficially.",
+                    "needs_improvement": "Unclear or irrelevant critique.",
+                    "poor": "No critical evaluation."
+                },
+                "weight": 30
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Structure and Academic Writing",
+                "description": "Quality of writing, flow, citations, and tone.",
+                "performance_descriptors": {
+                    "excellent": "Clear, coherent, formal tone, flawless grammar, and proper referencing.",
+                    "good": "Mostly clear and professional; minor issues.",
+                    "average": "Organization present but inconsistent.",
+                    "needs_improvement": "Structure or tone hinder clarity; referencing weak.",
+                    "poor": "Disorganized or informal writing."
+                },
+                "weight": 40
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "key_points": [
+                "Profound and precise understanding of 5G's technical capabilities (eMBB, URLLC, mMTC) and their direct impact on IoT.",
+                "Exceptional application of concepts with diverse, specific real-world examples across multiple sectors (e.g., smart factories, remote surgery).",
+                "Comprehensive and research-backed critical evaluation of both benefits and complex challenges, especially detailed security implications like zero-trust architecture and supply chain risks.",
+                "Flawless academic writing, logical flow, and sophisticated language, enhancing the clarity and impact of the analysis.",
+                "Effectively addresses the scalability and speed aspects, integrating them into benefits and challenges."
+            ],
+            "llm_questions": [
+                "Beyond current mitigation, what emerging cryptographic techniques or quantum-safe protocols could further secure 5G-IoT communications against future threats?",
+                "How might the integration of AI/ML at the edge, facilitated by 5G's low latency, transform IoT data processing and real-time decision-making in highly dynamic environments?",
+                "Discuss the regulatory and ethical considerations that must evolve alongside 5G-IoT deployment, especially concerning data privacy across diverse international jurisdictions.",
+                "Could you elaborate on the potential for 5G slicing to not only segment networks for different QoS but also to enhance security by isolating sensitive IoT traffic?",
+                "What are the long-term economic implications for industries that heavily invest in 5G-enabled IoT infrastructure, considering both CapEx and OpEx?"
+            ],
+            "llm_answers": [
+                "Emerging cryptographic techniques like homomorphic encryption and secure multi-party computation, alongside post-quantum cryptography, are crucial for future-proofing 5G-IoT. Homomorphic encryption allows computation on encrypted data, preserving privacy, while secure multi-party computation enables collaborative data analysis without revealing individual inputs. Post-quantum algorithms are vital to defend against the threat posed by quantum computers breaking current public-key cryptography.",
+                "AI/ML at the edge, empowered by 5G's URLLC, will revolutionize real-time decision-making. In manufacturing, edge AI can instantly detect anomalies on production lines, triggering immediate corrective actions. In autonomous vehicles, it enables split-second processing of sensor data for collision avoidance. This minimizes reliance on centralized cloud processing, reducing latency and improving system responsiveness and resilience.",
+                "The regulatory landscape for 5G-IoT is complex due to data sovereignty and varying privacy laws (e.g., GDPR, CCPA). Key ethical considerations include the collection and use of personal data from IoT devices, potential for surveillance, algorithmic bias in AI-driven IoT, and the 'right to be forgotten' for data generated by connected objects. International collaboration is essential for harmonizing standards and ensuring ethical deployment.",
+                "5G network slicing offers significant security enhancements by creating logically separate, isolated virtual networks atop a shared physical infrastructure. This allows for dedicated slices with customized security policies for sensitive IoT applications (e.g., critical infrastructure, healthcare). By isolating traffic, a breach in one slice is less likely to affect others, limiting the attack surface and containing potential damage. This micro-segmentation can be dynamically provisioned, offering unparalleled flexibility.",
+                "Long-term economic implications for industries investing in 5G-IoT include substantial initial Capital Expenditure (CapEx) for infrastructure upgrades and device procurement. However, Operational Expenditure (OpEx) can be significantly optimized through predictive maintenance, enhanced automation, reduced downtime, and more efficient resource utilization. The increased efficiency, new business models enabled by real-time data, and competitive advantages are expected to yield substantial Return on Investment (ROI) over time, driving economic growth and transformation across sectors."
+            ],
+            "final_submission": "The advent of 5G technology marks a paradigm shift for the Internet of Things (IoT), fundamentally transforming its scalability, speed, and overall capabilities. 5G's tripartite architecture, comprising Enhanced Mobile Broadband (eMBB), Ultra-Reliable Low-Latency Communications (URLLC), and Massive Machine-Type Communications (mMTC), directly addresses previous limitations of IoT deployment. eMBB facilitates high-bandwidth data transfer, crucial for IoT applications involving high-definition video streams from surveillance cameras or augmented reality tools in industrial settings. URLLC, with latencies as low as 1ms, is a game-changer for critical IoT applications such as autonomous vehicles, remote surgery, and industrial automation, where instantaneous decision-making is paramount. mMTC supports the connection of millions of devices per square kilometer, enabling unprecedented scalability for smart cities, precision agriculture, and vast sensor networks without network congestion.\n\nBenefits extend to device efficiency; 5G's energy-saving features, such as Power Saving Mode (PSM) and Extended Discontinuous Reception (eDRX), prolong battery life for IoT sensors, reducing maintenance costs and increasing deployment flexibility. The ability to process data closer to the source through Mobile Edge Computing (MEC), intrinsically linked with 5G, further reduces backhaul traffic and latency, enhancing real-time analytics for applications like predictive maintenance in smart factories. This distributed processing model also boosts network resilience and data privacy.\n\nHowever, 5G's sophisticated architecture introduces significant challenges, particularly in security. The massive increase in connected devices expands the attack surface exponentially, making device authentication and lifecycle management complex. The decentralized nature of MEC introduces new endpoints vulnerable to attacks. Slicing, while beneficial for QoS, demands robust isolation mechanisms to prevent cross-slice contamination. Security implications include sophisticated Distributed Denial of Service (DDoS) attacks targeting core network functions, supply chain vulnerabilities in device manufacturing, and privacy concerns arising from pervasive data collection. Mitigation strategies necessitate a multi-layered approach: implementing zero-trust architectures, leveraging AI/ML for anomaly detection, employing robust encryption protocols (e.g., end-to-end encryption for sensitive data), and ensuring secure over-the-air (OTA) updates for device firmware. Furthermore, regulatory frameworks must adapt swiftly to address data governance and privacy in this hyper-connected ecosystem. While 5G promises unprecedented IoT capabilities, its successful and secure deployment hinges on proactive and comprehensive cybersecurity measures.",
+            "feedback": {
+                "c1": "Excellent. Shows precise and in-depth understanding of 5G's specific features (eMBB, URLLC, mMTC) and their direct, nuanced impact on IoT scalability and speed, with strong theoretical backing. (15/15)",
+                "c2": "Excellent. Uses highly insightful and relevant examples (autonomous vehicles, remote surgery, smart factories, smart cities) that are clearly linked to specific 5G capabilities and their real-world application, demonstrating a deep understanding of practical implications. (15/15)",
+                "c3": "Excellent. Provides an exceptionally insightful and research-backed critical evaluation, particularly in detailing complex security implications like expanded attack surfaces, MEC vulnerabilities, supply chain risks, and proposing comprehensive mitigation strategies (zero-trust, AI/ML, OTA updates). (29/30)",
+                "c4": "Excellent. The writing is impeccably clear, coherent, and maintains a formal academic tone throughout. Flawless grammar, sophisticated vocabulary, and logical flow of arguments make it highly engaging and professional. (40/40)",
+                "total": "99/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "key_points": [
+                "Good understanding of 5G's core benefits to IoT like speed and latency, identifying key aspects for scalability.",
+                "Provides appropriate real-world examples, though some could benefit from deeper explanation or more direct linkage to specific 5G features.",
+                "Presents a reasonable discussion of challenges, including security implications, but lacks the profound depth and detailed mitigation strategies found in excellent work.",
+                "Writing is clear and mostly professional, with only minor grammatical or structural inconsistencies.",
+                "Successfully addresses most parts of the prompt, demonstrating a solid grasp of the subject matter."
+            ],
+            "llm_questions": [
+                "How do 5G's specific frequency bands (sub-6 GHz vs. mmWave) influence its impact on different types of IoT deployments, especially in terms of coverage and data rates?",
+                "Can you elaborate on how Network Function Virtualization (NFV) and Software-Defined Networking (SDN) within 5G architecture contribute to the flexibility and security management of IoT networks?",
+                "What are the primary economic barriers to widespread 5G-IoT adoption for small and medium-sized enterprises (SMEs), and what strategies can mitigate these?",
+                "Beyond device authentication, what measures are crucial for protecting the integrity and confidentiality of data traversing a 5G-IoT network from end-to-end?",
+                "How does the concept of 'digital twins' intersect with 5G-enabled IoT, and what benefits does this combination offer for industrial applications?"
+            ],
+            "llm_answers": [
+                "5G's frequency bands significantly impact IoT deployments. Sub-6 GHz bands offer wider coverage and better penetration, suitable for large-scale outdoor IoT applications like smart agriculture or logistics. Millimeter-wave (mmWave) bands provide extremely high data rates and low latency but have limited range and poor penetration, making them ideal for high-density indoor environments such as factories, stadiums, or precise control systems where throughput is critical.",
+                "NFV and SDN are foundational to 5G's flexibility and security. NFV decouples network functions from proprietary hardware, allowing them to run as software on standard servers, which enables faster deployment and scaling of IoT services. SDN centralizes network control, providing a holistic view of the network and enabling dynamic, policy-driven security management. Together, they allow for rapid configuration of network slices and granular security policies for different IoT device groups, enhancing both resilience and response to threats.",
+                "Primary economic barriers for SMEs include the high initial investment in 5G-enabled devices and infrastructure, the cost of upgrading existing systems, and the complexity of integrating new technologies. Mitigation strategies include government subsidies, vendor-led 'as-a-service' models (e.g., Network-as-a-Service), open-source IoT platforms, and focusing on specific, high-ROI applications initially to demonstrate value before full-scale adoption.",
+                "Beyond device authentication, protecting data integrity and confidentiality in 5G-IoT requires end-to-end encryption from the device to the application layer, secure boot processes for devices, regular security patching, and intrusion detection/prevention systems at various network points (edge, core). Secure data storage solutions, anonymization techniques for sensitive data, and strict access control policies are also crucial to maintain trust and privacy.",
+                "Digital twins, virtual replicas of physical IoT devices, systems, or processes, intersect powerfully with 5G-enabled IoT. 5G's high speed and low latency allow real-time data from physical assets to be instantly fed into their digital twins, enabling accurate simulations, predictive maintenance, and optimized performance. For industrial applications, this means engineers can test changes in a virtual environment before applying them to physical machinery, significantly reducing risks, downtime, and operational costs while accelerating innovation."
+            ],
+            "final_submission": "5G technology is set to profoundly influence the Internet of Things (IoT) landscape, primarily by enhancing its scalability and speed. The core capabilities of 5G, such as increased bandwidth and ultra-low latency, directly address some of the most significant bottlenecks that have limited large-scale IoT deployments. With speeds up to 10 Gbps, 5G can handle the immense data volumes generated by numerous IoT devices, from high-resolution sensors to smart cameras. This improved speed facilitates quicker data transmission to the cloud or edge servers for processing, enabling more responsive applications.\n\nScalability benefits from 5G's ability to support a significantly higher density of connected devices per square kilometer compared to previous generations. This massive connectivity capability is crucial for wide-area IoT applications like smart cities, where millions of sensors might be deployed for traffic management, environmental monitoring, or public safety. The reduced latency, often cited at under 10 milliseconds, is particularly beneficial for mission-critical IoT applications, such as remote-controlled robotics in manufacturing or real-time health monitoring systems, where delays can have serious consequences.\n\nHowever, 5G's integration into IoT networks also presents notable challenges. The exponential growth in the number of connected devices widens the attack surface for cyber threats, making comprehensive security management more complex. Each new device represents a potential entry point for malicious actors. Furthermore, the distributed nature of 5G networks, with more processing occurring at the edge, introduces new security vulnerabilities that need to be addressed at every layer, from the device to the core network. Security implications include the risk of device hijacking, data breaches, and sophisticated Distributed Denial of Service (DDoS) attacks. Ensuring robust authentication mechanisms for all devices, implementing end-to-end encryption for data, and regularly updating firmware are essential but challenging tasks across diverse IoT ecosystems. Additionally, the sheer volume of data generated by 5G-IoT raises significant privacy concerns, requiring careful consideration of data governance and regulatory compliance. The cost of upgrading existing IoT infrastructure to be 5G-compatible is also a substantial hurdle for many organizations.",
+            "feedback": {
+                "c1": "Good. Understands key concepts related to 5G's impact on IoT scalability and speed, correctly identifying increased bandwidth, low latency, and device density. Minor gaps in detailing the specific 5G features (e.g., URLLC, mMTC) that enable these. (12/15)",
+                "c2": "Good. Provides appropriate examples (smart cities, remote robotics, health monitoring) that mostly connect to the concepts. Could strengthen the linkage by explicitly stating which 5G capability is leveraged by each example. (12/15)",
+                "c3": "Good. Offers a reasonable evaluation of challenges, including the expanded attack surface, edge vulnerabilities, and privacy concerns. Lacks the research-backed depth and detailed mitigation strategies of an excellent response. (25/30)",
+                "c4": "Good. The writing is mostly clear, coherent, and professional, with a logical flow. Minor issues include occasional repetitive phrasing and slightly less sophisticated transitions than excellent work. Grammar is generally good. (34/40)",
+                "total": "83/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "key_points": [
+                "Adequate understanding of basic 5G benefits like faster speeds for IoT, but lacks depth in technical specifics.",
+                "Uses generic examples like 'smart homes' or 'sensors' without fully explaining the 5G connection or specific impact.",
+                "Identifies some challenges and security issues but discusses them superficially, without critical analysis or proposed solutions.",
+                "Writing is understandable but organization can be inconsistent, and the tone occasionally wavers from formal.",
+                "Addresses the prompt's main points but without significant detail or analytical depth."
+            ],
+            "llm_questions": [
+                "Could you explain in more detail how 5G's 'massive connectivity' feature specifically helps scale IoT networks beyond simply adding more devices?",
+                "What are some practical examples of how 5G's low latency directly improves specific IoT applications that require immediate feedback?",
+                "When discussing security, you mentioned 'more devices mean more risk.' Can you elaborate on one specific type of cyber threat unique to 5G-IoT networks?",
+                "How might different industries (e.g., manufacturing, healthcare) prioritize 5G's features differently for their IoT needs?",
+                "What role does cloud computing play in conjunction with 5G for processing the vast amounts of data generated by IoT devices?"
+            ],
+            "llm_answers": [
+                "5G's 'massive connectivity' (mMTC) isn't just about connecting more devices; it's about connecting a *vast number* of low-power, low-bandwidth devices efficiently. This means optimizing the network for sporadic, small data packet transmissions, enabling devices to stay connected for long periods without draining battery. This capability is vital for large-scale sensor networks in smart cities or agriculture, where millions of simple sensors need to report data occasionally, without overwhelming the network or requiring frequent battery changes.",
+                "5G's low latency is critical for IoT applications needing immediate feedback. For example, in remote-controlled machinery or robotics in factories, a human operator can control devices with virtually no delay, improving precision and safety. Another example is augmented reality (AR) in maintenance, where real-time overlays guide technicians; low latency ensures the virtual information aligns perfectly with the physical world, enhancing user experience and effectiveness.",
+                "One specific cyber threat unique to 5G-IoT networks is the increased risk of Distributed Denial of Service (DDoS) attacks orchestrated by botnets of compromised IoT devices. With millions of easily exploitable devices connected, an attacker can amass a huge botnet to launch powerful DDoS attacks not only against other targets but also against the 5G network infrastructure itself, potentially disrupting critical services like smart grids or emergency communications.",
+                "Different industries prioritize 5G features based on their specific needs. Manufacturing heavily prioritizes URLLC for real-time control of robots and machinery to ensure precision and safety, alongside mMTC for sensor networks. Healthcare prioritizes URLLC for remote surgery and real-time patient monitoring, and eMBB for high-fidelity medical imaging and remote consultations. Smart cities might prioritize mMTC for widespread sensor deployments and eMBB for public safety video feeds.",
+                "Cloud computing plays a significant role by providing the scalable processing power and storage needed for the vast amounts of data generated by 5G-IoT. While 5G facilitates data collection and edge processing for real-time needs, the cloud is essential for long-term storage, complex analytics (e.g., big data, AI/ML model training), and aggregated insights across distributed IoT systems. It allows for advanced processing that may be too resource-intensive for edge devices."
+            ],
+            "final_submission": "5G technology is important for the Internet of Things (IoT) because it makes things faster and can connect more devices. With 5G, IoT devices can send data much quicker than before. This speed helps with things like getting information from sensors right away. It also means that a lot more devices can be connected at the same time without the network getting slow. This is good for scaling up IoT, so you can have smart cities with lots of sensors or more smart devices in homes.\n\nFor benefits, 5G’s high speed means applications that need fast responses, like self-driving cars or smart health monitors, can work better. The ability to connect many devices is good for smart homes, where you might have many connected lights, thermostats, and security cameras. It helps these systems talk to each other more efficiently. Also, having faster internet for IoT can help businesses gather more data to make better decisions.\n\nHowever, there are also challenges. One big challenge is security. Because so many more devices are connected, there are more chances for hackers to get in. If one device is not secure, it could be a way into the whole network. This means that all these new IoT devices need strong security, which can be hard to manage when there are so many different types of devices from different companies. Another challenge is the cost of setting up 5G networks and buying new devices that can use 5G. It's expensive. Also, with more data being collected, there are more concerns about privacy and who owns all this information. Sometimes, the connections might not be as reliable in all places, which can affect important IoT applications. So, while 5G offers a lot, it also brings new problems that need to be solved to make IoT safe and work well.",
+            "feedback": {
+                "c1": "Average. Demonstrates adequate understanding of basic 5G benefits (speed, connectivity) but lacks specific technical details (e.g., eMBB, URLLC, mMTC) that differentiate 5G from previous generations. Some explanations are simplified. (9/15)",
+                "c2": "Average. Examples (self-driving cars, smart homes, sensors) are present but often generic and superficial. The connection between the specific 5G feature and its impact on the scenario is not always clearly articulated or deep. (9/15)",
+                "c3": "Average. Mentions challenges like increased attack surface, cost, and privacy concerns. However, the discussion is superficial, lacking critical evaluation, detailed analysis of implications, or proposed solutions. (19/30)",
+                "c4": "Average. The organization is present but inconsistent, with some paragraphs lacking clear topic sentences or logical transitions. The tone occasionally feels informal, and there are some grammatical issues that hinder clarity. (27/40)",
+                "total": "64/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "key_points": [
+                "Surface-level understanding of 5G's impact, often equating it simply to 'faster internet' without grasping specific technical benefits for IoT.",
+                "Examples are vague or generic, failing to provide specific applications where 5G truly makes a difference to IoT.",
+                "Critique of challenges and security is superficial and often unclear, lacking any depth or research-backed insights.",
+                "Writing quality hinders clarity; the structure is poor, and there are noticeable issues with grammar, coherence, and academic tone.",
+                "Does not fully address all aspects of the prompt, particularly the detailed security implications."
+            ],
+            "llm_questions": [
+                "You mentioned 5G makes IoT faster. Can you give a specific example of an IoT device where this 'faster' speed provides a tangible, new benefit?",
+                "What specific *kind* of scalability does 5G offer for IoT? Is it just more devices, or something else?",
+                "What is one concrete security risk 5G might bring to IoT, and what is a very basic way to address it?",
+                "How is 5G different from Wi-Fi in how it connects IoT devices?",
+                "What is the difference between latency and speed in the context of 5G and IoT, and why does it matter?"
+            ],
+            "llm_answers": [
+                "A specific example is in industrial automation. With 5G's faster speed and especially lower latency, robotic arms in a factory can respond instantly to commands or sensor data, enabling more precise control and real-time coordination for complex assembly tasks. This improves efficiency and safety compared to older, slower connections.",
+                "5G offers 'massive machine-type communications' (mMTC) scalability for IoT. This means it can connect millions of low-power, low-cost devices (like environmental sensors or utility meters) over a wide area, even if they only send small amounts of data infrequently. It's not just more devices, but efficiently managing a huge density of diverse, often simple, IoT endpoints.",
+                "One concrete security risk 5G might bring is the increased difficulty in securing a vast number of diverse IoT devices, many of which have limited computing power for robust security. A basic way to address this is strong device authentication – ensuring only legitimate devices can connect to the network – and regular (though challenging) software updates for devices to fix vulnerabilities.",
+                "5G is a cellular technology, meaning it connects IoT devices wirelessly over a wide geographical area through cellular networks, similar to how mobile phones connect. Wi-Fi is a local area network technology, primarily for connecting devices wirelessly within a building or small area. 5G offers wider coverage and more consistent performance for mobile IoT devices, while Wi-Fi is typically used for stationary devices in specific locations.",
+                "Speed refers to how much data can be transferred in a given time (e.g., megabits per second). Latency refers to the delay before a transfer of data begins following an instruction. In 5G and IoT, both matter: High speed (bandwidth) is good for transmitting large files like video, while low latency is crucial for real-time control and immediate responses, like in autonomous vehicles where a split-second delay can be critical."
+            ],
+            "final_submission": "5G technology is definitely changing IoT. It's making things faster, which is good for everything connected to the internet. When IoT devices like smart cameras or sensors get faster internet from 5G, they can send information quicker. This means you can see things happening almost immediately, which is better than before. It also means more devices can be online at the same time, making the internet of things bigger and more widespread. So, for example, in a smart city, more cameras and traffic lights can all be connected and work together.\n\nThe good things about 5G for IoT are mostly about speed and being able to connect lots of things. Your smart home devices will probably work better and respond faster. For businesses, they can have more sensors in their factories to keep an eye on things, and the data will come in quicker. This could help them make decisions faster or fix problems before they get big. It's like having a super-fast highway for all your internet-connected gadgets.\n\nBut there are also problems. Security is a big one. If you have so many devices connected, it's harder to make sure all of them are safe from hackers. Each device could be a way for bad people to get into the network. So, we need better ways to protect all these new devices. Another issue is that 5G is still being rolled out, so it's not everywhere yet, and some places might not have good coverage. Also, it costs a lot to build all the new towers and buy new 5G-enabled devices. Sometimes the network might not be as strong as people expect. So, while 5G is faster and connects more, it also makes security more complicated and is expensive to put in place. It will take time for everything to work perfectly and safely.",
+            "feedback": {
+                "c1": "Needs Improvement. Shows a surface-level understanding, primarily equating 5G with 'faster internet' and 'more connections' without delving into specific 5G enablers (e.g., URLLC, mMTC) or their unique technical impact on IoT. (7/15)",
+                "c2": "Needs Improvement. Examples like 'smart cameras,' 'smart homes,' and 'sensors in factories' are vague and generic. The submission fails to clearly link how specific 5G capabilities significantly enhance these scenarios beyond general speed increases. (7/15)",
+                "c3": "Needs Improvement. Mentions security as a 'big one' and the cost of rollout. However, the critique is superficial, lacks specific details about 5G-IoT security challenges, and offers no insightful analysis or proposed solutions. (15/30)",
+                "c4": "Needs Improvement. The structure is somewhat disorganized, with repetitive phrasing and an informal tone that hinders academic clarity. There are noticeable grammatical errors and awkward sentence constructions. (20/40)",
+                "total": "49/100"
+            }
+        },
+        {
+            "quality": "Poor",
+            "key_points": [
+                "Major misunderstandings of both 5G and IoT concepts, presenting incorrect or irrelevant information.",
+                "No real-world application or examples provided; discussions are abstract and disconnected.",
+                "Completely lacks critical evaluation, failing to address any challenges or security implications meaningfully.",
+                "Writing is highly disorganized, informal, and contains significant grammatical errors, making it difficult to comprehend.",
+                "Fails to address the core requirements of the prompt effectively."
+            ],
+            "llm_questions": [
+                "Could you clarify what 'IoT scalability' actually means in the context of 5G?",
+                "What are the main things 5G does for IoT that older technologies couldn't?",
+                "The submission mentions 'security is hard.' Can you name one *specific* type of security threat relevant to 5G-IoT?",
+                "What specific kind of 'speed' is most important for typical IoT devices?",
+                "Could you explain what a 'network' is in the context of IoT and 5G?"
+            ],
+            "llm_answers": [
+                "IoT scalability, with 5G, means the ability to effectively support a huge number of diverse IoT devices and their data traffic without the network breaking down or becoming too slow. This includes connecting millions of simple sensors, high-bandwidth cameras, and critical industrial machines all on the same infrastructure, making it much easier to deploy IoT on a massive scale.",
+                "The main things 5G does for IoT that older technologies couldn't are: (1) **Massive Connectivity:** Connecting far more devices per square kilometer; (2) **Ultra-Reliable Low Latency:** Enabling near-instantaneous responses crucial for critical applications; and (3) **Enhanced Mobile Broadband:** Providing very high data speeds for data-intensive IoT applications like video surveillance, all while being more energy-efficient for devices.",
+                "One specific security threat relevant to 5G-IoT is the 'supply chain attack.' This means that vulnerabilities or malicious components could be secretly introduced into IoT devices or network equipment during their manufacturing or distribution, making them insecure before they even reach the end-user. This makes it very difficult to detect and fix.",
+                "For many typical IoT devices, especially those used in smart homes or environmental monitoring, the most important kind of 'speed' is often the *latency* – how quickly a command can be sent to a device and how quickly it responds. For example, when you turn off a smart light, you want it to respond instantly, not after a noticeable delay. High data speed (bandwidth) is more critical for devices streaming large amounts of data, like high-definition cameras.",
+                "In the context of IoT and 5G, a 'network' refers to the interconnected system that allows all the IoT devices to communicate with each other, with control systems, and with the internet. For 5G-IoT, this network includes the 5G radio access network (towers, small cells), the 5G core network (which manages connections), and often includes edge computing servers, all working together to transmit and process data from the vast number of connected things."
+            ],
+            "final_submission": "5G is a new kind of internet, like faster Wi-Fi but for phones. It helps the internet of things (IoT) because IoT is about connecting things. So, if your phone is faster, then your smart devices are faster too. This is good for speed, so things work without waiting. Like, your smart fridge can tell you it's empty very fast.\n\nBenefits are that everything will be quicker. More things can connect, so more IoT stuff can be online at once. This makes IoT bigger. Maybe all the cars will be smart and talk to each other. This is better than the old internet that was slow.\n\nChallenges are that it's hard to make sure everything is safe. If too many things are connected, hackers can get in easily. It's like having many doors to a house, and some doors are not locked. So, security is a big problem. Also, 5G is not everywhere yet, so it won't work for all IoT. It also costs money. Some people worry it's bad for health because of the waves. It's a complicated new system, but it's supposed to make everything fast.",
+            "feedback": {
+                "c1": "Poor. Demonstrates major misunderstandings, equating 5G to 'faster Wi-Fi' for phones and failing to grasp specific IoT concepts or how 5G uniquely impacts them beyond general speed. (4/15)",
+                "c2": "Poor. Provides no real-world application or concrete examples. Mentions 'smart fridge' and 'smart cars' but without any meaningful explanation of how 5G specifically benefits them in a new way. (3/15)",
+                "c3": "Poor. No critical evaluation. Mentions 'security is a big problem' and 'not everywhere yet' but without any depth, analysis, or understanding of the underlying issues specific to 5G-IoT. The health concern is irrelevant to the prompt. (8/30)",
+                "c4": "Poor. The writing is highly disorganized, informal, and contains significant grammatical errors, making it difficult to comprehend the intended message. Lacks coherent structure and academic tone entirely. (12/40)",
+                "total": "27/100"
+            }
+        }
+    ]
+}

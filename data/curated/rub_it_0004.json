@@ -1,0 +1,218 @@
+{
+    "domain": "Information Technology",
+    "prompt": "Evaluate the impact of ransomware attacks on critical infrastructure. Discuss attack vectors, consequences for essential services, and strategies for prevention and recovery.",
+    "rubric": {
+        "rubric_id": "rub_it_0004",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Conceptual Understanding",
+                "description": "Demonstrates deep understanding of the topic and related concepts.",
+                "performance_descriptors": {
+                    "excellent": "Shows precise and in-depth understanding with clear theoretical support.",
+                    "good": "Understands key concepts well with minor gaps.",
+                    "average": "Adequate explanation with some inaccuracies.",
+                    "needs_improvement": "Surface-level or confused understanding.",
+                    "poor": "Major misunderstandings or misrepresentations."
+                },
+                "weight": 15
+            },
+            {
+                "criterion_id": "c2",
+                "name": "Application to Real-World Scenarios",
+                "description": "Applies concepts meaningfully to examples or scenarios.",
+                "performance_descriptors": {
+                    "excellent": "Uses insightful and relevant examples clearly linked to concepts.",
+                    "good": "Examples mostly appropriate with some gaps in explanation.",
+                    "average": "Examples present but superficial or unclear connections.",
+                    "needs_improvement": "Vague or generic examples.",
+                    "poor": "No real-world application."
+                },
+                "weight": 15
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Critical Evaluation",
+                "description": "Analyzes challenges, limitations, or trade-offs thoughtfully.",
+                "performance_descriptors": {
+                    "excellent": "Provides insightful, research-backed critical evaluation.",
+                    "good": "Reasonable evaluation but less depth.",
+                    "average": "Mentions challenges superficially.",
+                    "needs_improvement": "Unclear or irrelevant critique.",
+                    "poor": "No critical evaluation."
+                },
+                "weight": 35
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Structure and Academic Writing",
+                "description": "Quality of writing, flow, citations, and tone.",
+                "performance_descriptors": {
+                    "excellent": "Clear, coherent, formal tone, flawless grammar, and proper referencing.",
+                    "good": "Mostly clear and professional; minor issues.",
+                    "average": "Organization present but inconsistent.",
+                    "needs_improvement": "Structure or tone hinder clarity; referencing weak.",
+                    "poor": "Disorganized or informal writing."
+                },
+                "weight": 35
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "key_points": [
+                "Precise identification of multi-faceted attack vectors including phishing, unpatched systems, supply chain, and insider threats.",
+                "Detailed discussion of severe consequences like operational shutdowns, public health risks, and economic disruption, supported by relevant real-world examples (Colonial Pipeline, healthcare systems).",
+                "Comprehensive outline of multi-layered prevention strategies including Zero Trust, MFA, network segmentation, and threat intelligence.",
+                "Robust recovery strategies emphasizing tested incident response plans and immutable offline backups.",
+                "Insightful critical evaluation of challenges such as system complexity, jurisdictional hurdles, security-efficiency trade-offs, and the ransom payment dilemma.",
+                "Excellent academic writing, logical flow, and formal tone throughout the submission."
+            ],
+            "llm_questions": [
+                "Beyond the Colonial Pipeline attack, what other specific instances or types of critical infrastructure have been most significantly impacted by ransomware, and what unique challenges did they face?",
+                "The submission mentions \"immutable backups stored offline.\" Can you elaborate on why immutability and offline storage are considered crucial, especially for CI, and what alternatives exist?",
+                "How does the \"Zero Trust architecture\" specifically enhance ransomware prevention in critical infrastructure environments, given their traditional perimeter-based security models?",
+                "What are the key ethical and practical considerations for governments and organizations when deciding on whether to pay a ransom, and how do these balance against the need to restore essential services?"
+            ],
+            "llm_answers": [
+                "Beyond Colonial Pipeline, the Irish Health Service Executive (HSE) suffered a major ransomware attack in 2021, severely disrupting patient care, cancer screenings, and diagnostic services for weeks, highlighting the direct human cost. Water treatment facilities, like the Oldsmar, Florida incident (though not strictly ransomware, it showed vulnerability), face risks of operational sabotage leading to public health crises. Energy grids have seen attacks like against Ukraine's power grid, demonstrating potential for widespread blackouts. Unique challenges include the convergence of IT/OT systems, reliance on legacy equipment, and the direct impact on human safety.",
+                "Immutability ensures that once data is backed up, it cannot be altered, encrypted, or deleted by ransomware, making it a reliable recovery point. Offline storage, or \"air-gapped\" backups, physically isolates the backup from the network, preventing ransomware from reaching and encrypting it even if the primary network is compromised. Alternatives include cloud-based backups with versioning and snapshots, but these still require robust access controls and may not provide the same level of isolation as true offline storage.",
+                "Zero Trust operates on the principle of \"never trust, always verify.\" For CI, this means that every user, device, and application attempting to access resources, whether internal or external, must be authenticated and authorized. This micro-segmentation limits lateral movement for attackers, even if they gain initial access, preventing ransomware from spreading easily across IT and OT networks. It moves away from the assumption that anything inside the perimeter is safe.",
+                "The primary ethical consideration is that paying ransoms funds criminal enterprises, potentially incentivizing future attacks. Governments often discourage payments to break this cycle. Practically, paying might be quicker to restore services and data, especially if backups are insufficient or recovery is complex. However, there's no guarantee data will be decrypted or not leaked, and organizations may still face regulatory fines. Not paying can lead to extended downtime, massive financial losses, and significant public disruption, creating a difficult dilemma where public welfare often clashes with long-term policy goals."
+            ],
+            "final_submission": "Ransomware poses an existential threat to critical infrastructure (CI) sectors, encompassing energy, water, healthcare, and transportation. Attack vectors are multi-faceted, ranging from sophisticated phishing campaigns targeting privileged users, exploiting unpatched vulnerabilities in legacy systems, and compromising supply chains through third-party vendors, to insider threats. The 2021 Colonial Pipeline attack exemplified how a single compromised VPN password could cascade into severe fuel shortages across the US East Coast, demonstrating the vulnerability of OT (Operational Technology) environments often connected to IT networks. Similarly, healthcare systems have faced ransomware attacks, leading to delayed medical procedures, data breaches, and even reported increases in mortality rates as essential services are disrupted.\n\nThe consequences for essential services extend far beyond financial losses. They include widespread operational shutdowns, loss of public trust, significant economic disruption, and, most critically, direct threats to public health and safety. The interconnected nature of CI means a breach in one sector can rapidly impact others. Prevention strategies demand a multi-layered approach: implementing robust Zero Trust architectures, mandating multi-factor authentication (MFA), enforcing strict network segmentation between IT and OT, conducting regular vulnerability assessments, and investing in continuous employee cybersecurity awareness training. Furthermore, proactive threat intelligence sharing between government and private entities is paramount. Recovery strategies necessitate comprehensive, regularly tested incident response plans, immutable backups stored offline, and strong collaboration with law enforcement and cybersecurity experts to avoid encouraging further attacks by paying ransoms.\n\nHowever, effective prevention and recovery face significant challenges. The sheer complexity and age of many CI systems make patching and segmentation difficult without disrupting operations. The global nature of threat actors often means jurisdictional hurdles in prosecution, leaving organizations in a reactive stance. There's also an inherent tension between security and operational efficiency; overly stringent controls can impede performance in critical, real-time environments. Moreover, the debate around whether to pay ransoms, while often discouraged by authorities, remains a pragmatic dilemma for organizations facing irreversible data loss or prolonged operational downtime. Future resilience hinges on developing international norms for cyber warfare, increasing public-private partnerships, and fostering a culture of cybersecurity at every level of infrastructure management, acknowledging that ransomware will continue to evolve in sophistication and target specific industrial control systems.",
+            "feedback": {
+                "c1": "Excellent. The submission demonstrates a precise and in-depth understanding of ransomware's impact on critical infrastructure, clearly articulating complex concepts like IT/OT convergence and the nuances of various attack vectors. (14/15)",
+                "c2": "Excellent. Real-world scenarios like the Colonial Pipeline and healthcare system attacks are used insightfully and are deeply integrated into the discussion, providing concrete evidence for the consequences and challenges. (14/15)",
+                "c3": "Excellent. The critical evaluation is highly insightful and research-backed, addressing complex trade-offs between security and operational efficiency, jurisdictional challenges, and the ethical dilemma of ransom payments with considerable depth. (33/35)",
+                "c4": "Excellent. The writing is clear, coherent, and maintains a formal academic tone throughout. The structure is logical, arguments flow seamlessly, and the prose is virtually flawless. (33/35)",
+                "total": "94/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "key_points": [
+                "Identifies common attack vectors such as spear-phishing, system vulnerabilities, and compromised RDP.",
+                "Provides relevant examples like municipal water utilities and energy providers, linking them to specific consequences.",
+                "Outlines standard prevention strategies including employee training, patching, MFA, network segmentation, and 3-2-1 backups.",
+                "Discusses key challenges in CI security, such as legacy systems and the IT/OT convergence.",
+                "Acknowledges the need for continuous evolution of defenses and the resource gap for smaller entities.",
+                "Generally clear and professional writing, though some explanations could benefit from deeper elaboration."
+            ],
+            "llm_questions": [
+                "The submission mentions \"SCADA systems\" and \"grid control systems.\" Can you briefly explain the difference between these and why their compromise by ransomware would be particularly severe for CI?",
+                "What are the practical difficulties of implementing the \"3-2-1 rule\" for backups in a large, distributed critical infrastructure environment, and what technological solutions help overcome them?",
+                "How does the increasing use of IoT devices within critical infrastructure environments potentially introduce new ransomware attack vectors or amplify existing ones?",
+                "The submission notes \"small or underfunded CI entities might lack\" investment and expertise. What specific government initiatives or industry collaborations are designed to support these entities?"
+            ],
+            "llm_answers": [
+                "SCADA (Supervisory Control and Data Acquisition) systems are a type of industrial control system that monitors and controls industrial processes locally or at remote locations. Grid control systems are a specific type of SCADA, overseeing the generation, transmission, and distribution of electrical power. Ransomware compromise of SCADA could disable essential operational controls (e.g., water pressure, chemical dosing), leading to unsafe conditions. For grid control, it could cause widespread power outages, impacting millions and other dependent CI sectors.",
+                "Implementing the 3-2-1 rule in CI is difficult due to the sheer volume of data, diverse system types (IT vs. OT), and the need for frequent backups for operational continuity. Storing one copy offsite can be challenging for very large datasets due to bandwidth limitations and physical storage requirements. Technological solutions include data deduplication, incremental backups, cloud-based archival services, and specialized backup solutions designed for industrial control systems that can handle large datasets and diverse protocols.",
+                "IoT devices, such as smart sensors, remote monitoring units, and connected actuators, significantly expand the attack surface. They often have weak default security, are difficult to patch, and can be easily exploited. If compromised, they can serve as entry points for ransomware to move laterally into more critical IT or OT networks. Their widespread deployment and management complexity also make inventory and security oversight challenging.",
+                "Governments worldwide have launched initiatives to address this. In the U.S., CISA (Cybersecurity and Infrastructure Security Agency) provides free tools, training, and vulnerability assessments to CI organizations. Sector-specific agencies, like the Department of Energy or EPA, also offer guidance. Industry collaborations, such as Information Sharing and Analysis Centers (ISACs), facilitate threat intelligence sharing and best practices among member organizations, helping smaller entities leverage collective expertise and resources."
+            ],
+            "final_submission": "Ransomware attacks present a significant and growing threat to critical infrastructure (CI) globally. These attacks, often initiated through common vectors such as spear-phishing emails, exploiting vulnerabilities in internet-facing systems, or compromising remote desktop protocols (RDP), can quickly paralyze essential services. For instance, a municipal water utility could face an attack that encrypts its supervisory control and data acquisition (SCADA) systems, preventing operators from monitoring and adjusting water flow or chemical levels, potentially leading to unsafe water supplies or service interruptions. Similarly, an energy provider might have its billing systems encrypted, impacting customer service and revenue, or even its grid control systems, although direct OT manipulation is less common but highly concerning.\n\nThe consequences for essential services are multifaceted, including operational downtime, financial losses from ransom demands and recovery efforts, and reputational damage. While data theft is often associated, the primary aim in CI ransomware is usually disruption. To prevent these incidents, organizations in CI must prioritize a robust cybersecurity posture. Key strategies include regular security awareness training for all employees to recognize phishing attempts, timely patching of all systems, implementing strong access controls like multi-factor authentication, and segmenting networks to limit the spread of an attack. Regular, verified backups are also essential, ideally following the 3-2-1 rule (three copies of data, on two different media, one copy offsite).\n\nHowever, securing critical infrastructure against ransomware is challenging due to several factors. Many CI systems are older, proprietary, and were not designed with modern cybersecurity threats in mind, making them difficult to patch or upgrade without significant cost and downtime. The interconnectedness of IT and OT networks also creates a larger attack surface, requiring specialized security solutions. While the submission outlines effective strategies, the real-world implementation faces hurdles. For instance, convincing employees to adhere to strict security protocols can be difficult. Additionally, the increasing sophistication of ransomware variants means that defenses must constantly evolve, requiring continuous investment and expertise that small or underfunded CI entities might lack. More proactive threat intelligence sharing and government support are needed to level the playing field against well-resourced cybercriminal groups.",
+            "feedback": {
+                "c1": "Good. The submission demonstrates a good understanding of core concepts, identifying key attack vectors and consequences. The explanation is generally accurate but lacks some of the in-depth theoretical support of an excellent response. (12/15)",
+                "c2": "Good. Relevant examples, such as the municipal water utility scenario, are used effectively to illustrate the impact. Connections between concepts and scenarios are mostly clear, though some explanations could be more detailed. (11/15)",
+                "c3": "Good. The critical evaluation identifies several valid challenges like legacy systems and IT/OT convergence. It provides a reasonable analysis, but the depth of discussion on systemic issues or nuanced trade-offs is less pronounced than expected for 'excellent'. (27/35)",
+                "c4": "Good. The writing is mostly clear and professional, with a logical flow. Minor grammatical or stylistic issues are present but do not significantly detract from clarity. Referencing is implied rather than explicit, which is acceptable but could be strengthened. (28/35)",
+                "total": "78/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "key_points": [
+                "Basic understanding of ransomware and its impact on critical infrastructure (power plants, hospitals).",
+                "Identifies common attack vectors like malicious emails and outdated software.",
+                "Mentions key consequences such as service disruption, treatment delays, and blackouts.",
+                "Outlines basic prevention strategies (employee training, antivirus, updates, backups).",
+                "Superficial critical evaluation, noting challenges like old equipment and budget constraints.",
+                "Organization is present but inconsistent; some phrasing is informal."
+            ],
+            "llm_questions": [
+                "The submission mentions \"clicking on bad emails\" as an attack vector. What specific social engineering techniques are often used in these emails to trick employees?",
+                "For a hospital, besides accessing patient records, what other critical systems or devices could be impacted by ransomware, leading to severe consequences?",
+                "How does regular data backup help in recovering from a ransomware attack, and what key consideration should organizations keep in mind when implementing a backup strategy?",
+                "The submission states \"some of the equipment... is very old.\" Why is updating or replacing this \"legacy\" equipment in critical infrastructure so challenging?"
+            ],
+            "llm_answers": [
+                "Attackers often use phishing techniques like impersonation (e.g., pretending to be a CEO or IT support), urgency (creating a false sense of crisis), or tempting offers (e.g., fake invoices or package delivery notifications) to make recipients click on malicious links or open infected attachments.",
+                "Beyond patient records, ransomware could encrypt systems controlling medical imaging devices (MRI, CT scanners), laboratory equipment, medication dispensing systems, and even building management systems (HVAC, security). This could disrupt diagnostics, treatment delivery, and overall facility operations, directly endangering patient safety.",
+                "Regular data backup allows an organization to restore its systems and data to a pre-attack state without paying the ransom. A key consideration is ensuring backups are isolated from the main network (air-gapped or immutable) so they cannot be infected or encrypted by the ransomware itself. Also, backups must be regularly tested to ensure their integrity and recoverability.",
+                "Updating or replacing legacy equipment is challenging due to several factors: the equipment is often deeply embedded in operational processes and may be expensive to replace, requiring significant capital investment. Downtime for upgrades can be unacceptable for 24/7 essential services. Furthermore, new systems may not be compatible with existing infrastructure, requiring extensive integration efforts and specialized expertise."
+            ],
+            "final_submission": "Ransomware attacks are a big problem for things like power plants and hospitals, which are called critical infrastructure. These attacks happen when hackers get into computer systems and lock them up, demanding money to unlock them. Attack vectors often involve clicking on bad emails, or maybe not updating software when you should. If a hospital gets hit, doctors might not be able to access patient records, which can cause delays in treatment. For a power grid, ransomware could mess with the computers that control electricity, leading to blackouts in some areas. This is really bad because people depend on these services every day.\n\nThe main consequences for essential services are that they stop working properly. This can mean people can't get electricity, water, or medical care. It also costs a lot of money to fix these attacks, both for paying the ransom (which is not always recommended) and for getting systems back online. To stop these attacks, organizations need to make sure their computers are secure. This includes teaching employees not to open suspicious emails, having good antivirus software, and making sure all software is updated. Backing up data regularly is also very important, so if systems get encrypted, you can just restore from a backup.\n\nHowever, it's not always easy to protect these big systems. Some of the equipment in critical infrastructure is very old and can't be updated easily, making it vulnerable. Also, there are so many computers and networks, it's hard to keep track of everything and make sure it's all safe. It's a constant battle, and the hackers are always trying new ways to get in. Companies need to spend more money on cybersecurity, but sometimes they don't have enough budget. It's tough because if they don't protect themselves, the impact can be huge on everyone. More government help could be useful.",
+            "feedback": {
+                "c1": "Average. The submission provides an adequate explanation of ransomware and its impact, identifying key concepts. However, the depth of understanding is somewhat superficial, with some generalizations and a lack of precise terminology. (10/15)",
+                "c2": "Average. Examples like hospitals and power grids are present, but the connections to concepts are sometimes superficial, and the scenarios are not fully developed or detailed. (9/15)",
+                "c3": "Average. Critical evaluation is present, but it mostly mentions challenges superficially, such as old equipment and budget constraints, without delving into deeper analysis or trade-offs. (22/35)",
+                "c4": "Average. The organization is present but inconsistent, with some paragraphs lacking clear topic sentences. The tone is sometimes informal, and there are minor grammatical errors that detract slightly from academic quality. (21/35)",
+                "total": "62/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "key_points": [
+                "Surface-level understanding of ransomware, confusing it slightly with general hacking.",
+                "Vague and generic attack vectors (viruses, bad files).",
+                "Basic consequences mentioned (lights out, internet down) without specific detail.",
+                "Generic prevention strategies (careful with emails, antivirus, separate hard drive backups).",
+                "Minimal and unclear critical evaluation, largely restating the problem.",
+                "Structure is weak; informal tone and several grammatical issues."
+            ],
+            "llm_questions": [
+                "The submission mentions \"viruses\" and \"bad files.\" How is ransomware specifically different from a typical computer virus, and why is this distinction important for prevention?",
+                "What distinguishes \"critical infrastructure\" from other types of organizations or companies when considering the impact of a cyberattack?",
+                "The submission suggests making \"copies of all your important files, like on a separate hard drive.\" What are the limitations or potential risks of this as a sole backup strategy for critical infrastructure?",
+                "The essay notes \"the hackers are smart.\" What are some common motivations behind ransomware attacks on critical infrastructure beyond just financial gain?"
+            ],
+            "llm_answers": [
+                "A typical computer virus often aims to corrupt data, replicate itself, or steal information without directly demanding a ransom. Ransomware, however, specifically encrypts data or locks access to systems and then demands a payment (ransom) for decryption or restoration of access. This distinction is crucial because ransomware's business model and direct financial incentive drive specific prevention and recovery strategies (like robust backups and incident response planning).",
+                "Critical infrastructure refers to physical and cyber systems essential for the functioning of society and the economy, whose disruption or destruction would have a debilitating impact on national security, economic stability, public health, or safety. Unlike other businesses, attacks on CI can directly endanger lives, cause widespread societal disruption, and undermine national defense, making their protection a matter of national security.",
+                "Using a separate hard drive for backups is better than no backup, but for CI, it has significant limitations: it's prone to human error, lacks automation, offers limited scalability for large data volumes, and requires manual rotation. If the hard drive is physically connected to an infected system, it could also become encrypted. It doesn't provide disaster recovery for entire systems, only files, and is not suitable for continuous operations.",
+                "While financial gain is the primary motivator for most ransomware groups, state-sponsored actors might use ransomware as a cover for more destructive cyber warfare, to disrupt an adversary's economy, or to test defensive capabilities. Ideologically motivated groups or hacktivists might also employ ransomware to cause chaos or make a political statement, rather than for direct financial enrichment."
+            ],
+            "final_submission": "Ransomware is when hackers get inside important computers, like at the government or big companies, and then they lock everything up. They want money, like a ransom, to give you back your stuff. This is bad for critical infrastructure, which means things we need every day like power and internet. The hackers can get in through viruses or when people download bad files. Sometimes they just find a way in if the security isn't strong enough. If the power company gets hit, then the lights might go out for a lot of people. Or if the internet company gets ransomware, then people can't use their phones or computers for work or school.\n\nThe results of these attacks are that things stop working, and it's very expensive to fix. Companies have to pay money, or they have to spend a lot of time getting their computers to work again. To stop this from happening, people need to be careful with their emails and make sure they don't click on strange links. Also, companies should have good antivirus programs on all their computers. It's also important to make copies of all your important files, like on a separate hard drive, so you don't lose them if the main computer gets locked. This way, you can just use the copies instead.\n\nIt's hard to stop all these attacks because the hackers are smart. And sometimes the computer systems are old, so it's not easy to put new security on them. It's a big problem that needs to be solved. Companies need to try harder. There's not much more to say, it's just a bad situation that we need to figure out. Critical infrastructure should be more careful with their computers.",
+            "feedback": {
+                "c1": "Needs Improvement. The understanding of ransomware is surface-level and somewhat confused, equating it broadly with general hacking. Key concepts are vaguely explained, lacking precision. (7/15)",
+                "c2": "Needs Improvement. Examples are generic (lights out, internet down) and lack specific detail or meaningful connection to the nuances of critical infrastructure. The application is vague. (7/15)",
+                "c3": "Needs Improvement. The critical evaluation is minimal and largely irrelevant, simply stating that \"hackers are smart\" and \"it's a big problem.\" There is no analytical depth or discussion of trade-offs. (17/35)",
+                "c4": "Needs Improvement. The structure is weak and disorganized, making it difficult to follow. The tone is informal, and there are several grammatical errors and awkward phrasings that hinder clarity. Referencing is absent. (18/35)",
+                "total": "49/100"
+            }
+        },
+        {
+            "quality": "Poor",
+            "key_points": [
+                "Major misunderstanding of ransomware, conflating it with generic computer viruses.",
+                "Irrelevant or misapplied examples (bank, home computer, games) not specific to critical infrastructure.",
+                "Fails to discuss attack vectors beyond \"bad websites.\"",
+                "Provides simplistic and ineffective prevention/recovery strategies (antivirus, restart computer, call repair person).",
+                "No critical evaluation; dismisses the problem as \"simple.\"",
+                "Writing is disorganized, informal, and contains significant factual errors and misrepresentations."
+            ],
+            "llm_questions": [
+                "The submission describes ransomware as a \"computer virus that makes your computer not work.\" What is the fundamental difference between ransomware and a generic computer virus, especially in terms of its mechanism and goal?",
+                "The submission uses a bank as an example of critical infrastructure. While important, what are the primary characteristics that define *critical* infrastructure in the context of the prompt (energy, water, healthcare, transportation)?",
+                "The submission suggests \"restarting your computer\" as a recovery method. Why is this generally ineffective against ransomware, and what are the actual first steps in an incident response plan?",
+                "The submission claims \"It's not a big deal for big companies, they have IT guys who can fix it.\" How does this perspective fundamentally misunderstand the scale and complexity of ransomware attacks on large critical infrastructure organizations?"
+            ],
+            "llm_answers": [
+                "A generic computer virus usually replicates itself and spreads, often corrupting files or stealing data, sometimes without the user's immediate knowledge. Ransomware, however, specifically encrypts a user's or organization's files, rendering them inaccessible, and then demands a payment (ransom) in exchange for a decryption key. The mechanism is encryption, and the goal is explicit financial extortion, making it a targeted attack with direct financial leverage.",
+                "Critical infrastructure is defined by its essentiality for a nation's functioning, public health, and safety, such that its disruption or destruction would have a debilitating impact. While banks are important, the prompt emphasizes sectors like energy, water, healthcare, and transportation, where disruption can lead to direct threats to life, widespread societal chaos, or significant economic collapse beyond individual financial loss.",
+                "Restarting a computer is generally ineffective against ransomware because the encryption process usually completes before a restart, and the malicious code often persists or reactivates. The actual first steps in an incident response plan are to isolate the infected systems to prevent further spread, identify the strain of ransomware, assess the damage, and then initiate recovery from secure backups.",
+                "This perspective profoundly misunderstands the severity. Ransomware attacks on large critical infrastructure organizations can cause widespread operational shutdowns, affecting millions of people, disrupting supply chains, and threatening public safety (e.g., in healthcare or energy). \"IT guys\" alone cannot simply \"fix it\"; it requires extensive incident response teams, legal and PR efforts, massive data recovery operations, and potentially millions or billions in costs, far beyond a typical virus issue."
+            ],
+            "final_submission": "Ransomware is a type of computer virus that makes your computer not work. It's when bad guys get into your computer and stop you from using it until you pay them money. This happens a lot to regular people, but also to big companies. Critical infrastructure is like when things are really important, so they shouldn't get viruses. If a bank gets ransomware, then people can't get their money out, which is a big problem. Or if someone's computer at home gets ransomware, they can't do their games. It's very annoying.\n\nTo stop ransomware, you just need to install a good antivirus. And don't go to bad websites. If you get ransomware, you should probably just restart your computer, or maybe call a computer repair person. The consequences are that your computer is broken, and you lose files if you don't save them somewhere else. Sometimes the internet slows down because of too many viruses. People should just be more careful with their computers.\n\nThere isn't really anything more to say about it. It's a simple problem, just avoid viruses. It's not a big deal for big companies, they have IT guys who can fix it. Critical infrastructure will be fine because they have good computers. The prompt wants to know about ransomware, and I think I explained it. It's just a computer problem.",
+            "feedback": {
+                "c1": "Poor. Demonstrates major misunderstandings, confusing ransomware with generic computer viruses and misrepresenting its core mechanisms and impact. (4/15)",
+                "c2": "Poor. No real-world application relevant to critical infrastructure; examples like a bank or home computer are inappropriate and fail to connect to the prompt's focus on essential services. (3/15)",
+                "c3": "Poor. There is no critical evaluation whatsoever. The submission dismisses the problem as simple and makes unsupported claims, indicating a complete lack of analysis. (10/35)",
+                "c4": "Needs Improvement. The writing is disorganized, informal, and contains significant grammatical errors, making it difficult to understand. The tone is inappropriate for academic work, and the conclusion is dismissive. (12/35)",
+                "total": "29/100"
+            }
+        }
+    ]
+}

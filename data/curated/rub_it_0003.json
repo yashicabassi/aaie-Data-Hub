@@ -1,0 +1,203 @@
+{
+    "domain": "Information Technology",
+    "prompt": "Analyze social engineering attacks and human vulnerabilities in cybersecurity. Explore common types of social engineering, psychological principles exploited, and measures to enhance human resilience.",
+    "rubric": {
+        "rubric_id": "rub_it_0003",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Conceptual Understanding",
+                "description": "Demonstrates deep understanding of the topic and related concepts.",
+                "performance_descriptors": {
+                    "excellent": "Shows precise and in-depth understanding with clear theoretical support.",
+                    "good": "Understands key concepts well with minor gaps.",
+                    "average": "Adequate explanation with some inaccuracies.",
+                    "needs_improvement": "Surface-level or confused understanding.",
+                    "poor": "Major misunderstandings or misrepresentations."
+                },
+                "weight": 10
+            },
+            {
+                "criterion_id": "c2",
+                "name": "Application to Real-World Scenarios",
+                "description": "Applies concepts meaningfully to examples or scenarios.",
+                "performance_descriptors": {
+                    "excellent": "Uses insightful and relevant examples clearly linked to concepts.",
+                    "good": "Examples mostly appropriate with some gaps in explanation.",
+                    "average": "Examples present but superficial or unclear connections.",
+                    "needs_improvement": "Vague or generic examples.",
+                    "poor": "No real-world application."
+                },
+                "weight": 40
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Critical Evaluation",
+                "description": "Analyzes challenges, limitations, or trade-offs thoughtfully.",
+                "performance_descriptors": {
+                    "excellent": "Provides insightful, research-backed critical evaluation.",
+                    "good": "Reasonable evaluation but less depth.",
+                    "average": "Mentions challenges superficially.",
+                    "needs_improvement": "Unclear or irrelevant critique.",
+                    "poor": "No critical evaluation."
+                },
+                "weight": 20
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Structure and Academic Writing",
+                "description": "Quality of writing, flow, citations, and tone.",
+                "performance_descriptors": {
+                    "excellent": "Clear, coherent, formal tone, flawless grammar, and proper referencing.",
+                    "good": "Mostly clear and professional; minor issues.",
+                    "average": "Organization present but inconsistent.",
+                    "needs_improvement": "Structure or tone hinder clarity; referencing weak.",
+                    "poor": "Disorganized or informal writing."
+                },
+                "weight": 30
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "key_points": [
+                "Demonstrates precise and in-depth understanding of social engineering types and psychological principles.",
+                "Provides insightful real-world examples, clearly linking concepts to practical scenarios.",
+                "Offers a comprehensive multi-faceted approach to enhancing human resilience.",
+                "Includes a strong, research-backed critical evaluation of limitations and challenges.",
+                "Exhibits flawless academic writing, clear structure, and formal tone."
+            ],
+            "llm_questions": [
+                "How might an understanding of cognitive load theory further inform strategies for enhancing human resilience against social engineering attacks?",
+                "Beyond the discussed principles, what role does emotional manipulation (e.g., fear, urgency) play, and how can training address it?",
+                "Discuss the ethical implications for organizations when deploying advanced simulated social engineering attacks internally, especially concerning employee trust and potential psychological impact."
+            ],
+            "llm_answers": [
+                "Cognitive load theory suggests that our capacity for processing information is limited. When individuals are under high cognitive load (e.g., stressed, distracted), they are more susceptible to social engineering tactics. Resilience strategies could leverage this by simplifying security protocols, providing just-in-time training modules, or designing user interfaces that minimize cognitive effort for secure actions, thus reserving cognitive resources for critical threat detection.",
+                "Emotional manipulation is central to many social engineering attacks, often inducing fear, urgency, or curiosity to bypass rational thought. For instance, ransomware threats leverage fear, while urgent requests exploit a desire to please. Training can address this by teaching emotional self-awareness, recognizing common emotional triggers used by attackers, and implementing 'stop-and-think' protocols that encourage users to pause and verify requests before reacting emotionally.",
+                "Deploying advanced internal simulated attacks, while effective, carries ethical considerations. Organizations must prioritize transparency, ensuring employees are aware such simulations occur and understand their purpose. It's crucial to avoid shaming or overly punitive measures for 'failures,' focusing instead on learning and support. Clear opt-out options, debriefing sessions, and psychological support resources can mitigate negative impacts, maintaining trust and a positive security culture."
+            ],
+            "final_submission": "Social engineering stands as a paramount threat in modern cybersecurity, exploiting human psychological predispositions rather than technical vulnerabilities. It is the art of manipulating individuals into divulging confidential information or performing actions that benefit an attacker. Common types include phishing, where attackers impersonate trusted entities via email or text to obtain credentials; pretexting, involving the creation of a fabricated scenario to extract information; baiting, which entices victims with physical media (e.g., infected USB drives) or online downloads; and quid pro quo, offering a benefit in exchange for information or access.\n\nThese attacks deeply exploit fundamental psychological principles. Authority, as demonstrated by the Milgram experiment, compels individuals to obey perceived legitimate figures, making CEO impersonations highly effective. Reciprocity creates an obligation to return a favor, often used in initial interactions. Scarcity leverages the fear of missing out, while Liking makes individuals more compliant with those they find agreeable. Commitment and Consistency, alongside Social Proof, nudge victims into actions aligned with prior small concessions or perceived group norms.\n\nEnhancing human resilience requires a multi-faceted approach. Technical measures, such as robust email filtering, multi-factor authentication (MFA), and intrusion detection systems, form a crucial first line of defense. However, the cornerstone is comprehensive user education: regular, interactive training sessions, simulated phishing campaigns, and awareness programs that highlight evolving threats and reinforce secure behaviors. Organizations must also cultivate a security-conscious culture, empowering employees to question suspicious requests without fear of reprimand. Policy enforcement, including clear incident reporting procedures and strict data handling guidelines, solidifies these defenses.\n\nWhile these measures significantly reduce risk, a critical evaluation reveals inherent limitations. The human element, by its very nature, is fallible; stress, distraction, and cognitive biases can still lead to errors. Attackers constantly innovate, adapting their tactics to bypass defenses and exploit emerging social trends. Furthermore, \"security fatigue\" can diminish the effectiveness of continuous training. The balance between strong security and user convenience remains a persistent challenge, necessitating ongoing vigilance and adaptive defense strategies that evolve with both human behavior and technological advancements.",
+            "feedback": {
+                "c1": "Excellent. The submission demonstrates a precise and in-depth understanding of social engineering, detailing various types and deeply exploring the exploited psychological principles with clear theoretical grounding. (10/10)",
+                "c2": "Excellent. It uses highly insightful and relevant real-world examples (e.g., Milgram experiment connection, multi-factor authentication, simulated phishing) that are clearly linked to the conceptual discussions and proposed solutions. (38/40)",
+                "c3": "Excellent. The critical evaluation is insightful, discussing human fallibility, evolving attack vectors, \"security fatigue,\" and the convenience-security trade-off, demonstrating a nuanced and research-backed perspective. (19/20)",
+                "c4": "Excellent. The writing is clear, coherent, and maintains a consistently formal academic tone. It is flawlessly grammatical and well-structured, enhancing readability and demonstrating high-quality academic presentation. (29/30)",
+                "total": "96/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "key_points": [
+                "Provides a good understanding of common social engineering types and some key psychological principles.",
+                "Offers appropriate real-world examples, though some connections could be more explicit.",
+                "Discusses relevant measures for enhancing human resilience, covering both technical and educational aspects.",
+                "Includes reasonable critical evaluation regarding the persistent challenge of the human element.",
+                "Maintains a mostly clear and professional writing style with minor grammatical issues."
+            ],
+            "llm_questions": [
+                "Can you elaborate on how a 'sense of urgency' is specifically created in a phishing attack, and what immediate red flags users should look for?",
+                "How can organizations effectively measure the success of their user education programs against social engineering?",
+                "What are some common challenges in implementing multi-factor authentication (MFA) across an entire organization, and how can these be overcome?"
+            ],
+            "llm_answers": [
+                "A sense of urgency in phishing is often created through threats of account suspension, impending deadlines for action, or alerts about 'unauthorized activity' that require immediate verification. Red flags include unexpected emails about critical issues, demands for immediate action, generic greetings instead of personalized ones, and links that don't match the sender's apparent domain when hovered over.",
+                "Organizations can measure success through metrics such as a decrease in successful phishing click rates over time in simulated attacks, an increase in reported suspicious emails, and improved scores on security awareness quizzes. Regular feedback from employees on the training content's helpfulness and relevance also provides qualitative insight into program effectiveness.",
+                "Common challenges include user resistance due to perceived inconvenience, integration complexities with legacy systems, and the cost of deploying MFA solutions. These can be overcome by communicating the security benefits clearly, offering diverse MFA options (e.g., authenticator apps, biometrics), providing thorough user training, and phased implementation plans that address compatibility issues with older infrastructure."
+            ],
+            "final_submission": "Social engineering is a significant cybersecurity threat that focuses on manipulating people rather than hacking systems. Attackers use various tricks to get individuals to reveal sensitive information or perform harmful actions. Common types include phishing, where malicious emails try to trick recipients into clicking bad links or giving up credentials, and pretexting, which involves making up a believable story to convince someone to provide information. Another common method is baiting, which might involve leaving an infected USB drive somewhere hoping someone picks it up and plugs it into their computer.\n\nThese attacks work because they play on human nature. Psychological principles like the desire to be helpful or to obey someone perceived as an authority figure are often exploited. For instance, an attacker might pretend to be from IT support (authority) to gain trust and get login details. Urgency is also a key factor; attackers often create a sense of immediate need to prevent victims from thinking critically. Liking also plays a role, as people are more likely to comply with requests from someone they find agreeable or trustworthy.\n\nTo enhance human resilience against social engineering, several measures are important. User education is paramount, teaching employees what social engineering is, how to spot it, and what to do if they encounter a suspicious request. Regular training sessions and awareness campaigns can help keep this information fresh. Implementing strong technical controls like multi-factor authentication (MFA) and robust email filters can significantly reduce the success rate of these attacks. Furthermore, establishing clear reporting procedures encourages employees to report suspicious activities without fear, allowing organizations to respond quickly.\n\nWhile these measures are effective, it's challenging to completely eliminate the risk. People can still make mistakes, especially when busy or under pressure. Attackers are constantly finding new ways to trick people, making it an ongoing battle. The main limitation is that technology can only do so much; the human element remains the weakest link. Therefore, continuous vigilance and adapting defense strategies are crucial.",
+            "feedback": {
+                "c1": "Good. Understands key concepts well, correctly identifying common social engineering types and explaining several psychological principles, though with slightly less depth than an excellent response. (8/10)",
+                "c2": "Good. Examples are mostly appropriate and relevant (e.g., IT support impersonation, infected USBs), demonstrating a good application of concepts to scenarios, though some connections could be more explicitly drawn. (32/40)",
+                "c3": "Good. Provides a reasonable evaluation, acknowledging the persistent challenge of human error and evolving threats, though the depth of analysis is not as strong as a research-backed critique. (16/20)",
+                "c4": "Good. The writing is mostly clear, coherent, and professional. There are minor grammatical issues or occasional awkward phrasing that slightly detract from the overall flow, but the structure is generally sound. (24/30)",
+                "total": "80/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "key_points": [
+                "Demonstrates adequate understanding of basic social engineering types but with some inaccuracies or oversimplifications.",
+                "Examples are present but generic, and connections to specific concepts are superficial.",
+                "Suggests basic measures for enhancing resilience but lacks detail or comprehensive strategies.",
+                "Mentions challenges superficially without deeper analysis or research.",
+                "Organization is present but inconsistent, with some informal language."
+            ],
+            "llm_questions": [
+                "You mentioned 'tricks people to get their computer information.' Can you give a more specific example of what kind of information they might be trying to get?",
+                "What are some key things an average user should immediately check when they receive a suspicious email that looks like it's from their bank?",
+                "You mentioned 'strong passwords.' Besides length, what makes a password 'strong'?"
+            ],
+            "llm_answers": [
+                "Attackers often try to get login credentials (usernames and passwords), financial details like credit card numbers, or personal identifying information such as social security numbers. This information can then be used for identity theft, financial fraud, or to gain unauthorized access to accounts.",
+                "An average user should check the sender's email address for inconsistencies, hover over links to see the actual destination URL without clicking, look for generic greetings instead of their name, and spot any spelling or grammatical errors in the email body. It's also wise to directly visit the bank's official website or call them using a trusted number instead of using links or numbers provided in the email.",
+                "Besides length, a strong password incorporates a mix of uppercase and lowercase letters, numbers, and special characters. It should also be unique and not reused across multiple accounts, and ideally, not contain easily guessable personal information or common dictionary words. Using a password manager can help create and store strong, unique passwords."
+            ],
+            "final_submission": "Social engineering is when bad guys try to trick people to get their computer information or access. It's not about hacking computers, but hacking people. One common type is phishing, which is when you get fake emails that look real, asking you to click a link or give your password. Sometimes they pretend to be from your bank or a company you know. Another type is when someone calls you and pretends to be someone important to get information, which is a kind of trickery.\n\nThese attacks work because people can be fooled. They use psychological things like making people trust them, or making them scared. If someone pretends to be important, like your boss, you might listen to them. If they say something bad will happen if you don't act fast, you might get scared and do what they say without thinking. It's like playing on feelings to get what they want.\n\nTo stop social engineering, people need to be more careful. Training is important so people know what to look for in a suspicious email or call. We should also use strong passwords and not click on links from unknown senders. Companies should have rules about how to share information and make sure everyone follows them. Also, having good security software on computers helps a lot, like antivirus.\n\nThe biggest challenge is that people are human and make mistakes. Even with training, someone might have a bad day or be distracted and fall for a trick. The attackers are always getting smarter too, so it's hard to keep up. It's a continuous problem because you can't control what every person does all the time. Technology can help, but it's mainly about people's awareness.",
+            "feedback": {
+                "c1": "Average. Demonstrates an adequate explanation of social engineering and some common types. However, the explanation of psychological principles is basic and lacks detail, showing some inaccuracies or oversimplifications. (7/10)",
+                "c2": "Average. Examples are present (fake emails, phone calls pretending to be important) but are superficial or lack clear, specific connections to the concepts. They don't provide deep insight into real-world scenarios. (26/40)",
+                "c3": "Average. Mentions challenges superficially, such as people making mistakes and attackers getting smarter. It lacks deeper analysis, specific examples, or research to support the critical evaluation. (13/20)",
+                "c4": "Average. Organization is present but inconsistent. The writing style can be informal in places, and while generally understandable, it lacks the precision and coherence expected in academic writing. (20/30)",
+                "total": "66/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "key_points": [
+                "Demonstrates surface-level and sometimes confused understanding of social engineering concepts.",
+                "Provides vague or generic examples with unclear connections to specific attack types or principles.",
+                "Suggests very basic, incomplete, and somewhat generic measures for resilience.",
+                "Offers an unclear and superficial critique that largely restates the problem.",
+                "Structure and tone hinder clarity, and academic referencing is absent."
+            ],
+            "llm_questions": [
+                "You mentioned 'hackers try to trick people to get their stuff.' Can you provide a specific, hypothetical example of what 'stuff' a hacker might try to get using social engineering?",
+                "When you say 'people are easily fooled,' can you describe one specific 'trick' or tactic an attacker might use that makes people vulnerable?",
+                "What does 'strong passwords' mean specifically? Give an example of a strong password and a weak one."
+            ],
+            "llm_answers": [
+                "A hacker might try to get your online banking login details by sending a fake email from your bank, or they might try to trick an employee into transferring company funds to a fraudulent account by impersonating a CEO in an urgent email.",
+                "One trick is 'pretexting,' where an attacker creates a fabricated scenario, like pretending to be from tech support and claiming there's a problem with your computer, to get you to give them remote access or reveal passwords. They invent a believable story to gain trust.",
+                "A strong password is long (at least 12-16 characters), uses a mix of uppercase and lowercase letters, numbers, and symbols, and isn't easily guessable. An example of a strong password could be '!Gr8P@$$w0rd_2024!'. A weak one would be 'password123' or your birthday, as these are easy to guess or crack."
+            ],
+            "final_submission": "Social engineering is a big problem in computer security. It's when hackers try to trick people to get their stuff. They don't really hack computers, they hack the people using them. A common way is with phishing, which is like emails that look real but are actually fake. They want you to click on something bad. Sometimes they call you too, pretending to be someone they're not, to get your info. This is very sneaky.\n\nThe reason these tricks work is because people are easily fooled. They use psychology. Like, if someone seems important, you might listen to them. Or if they make you think something urgent is happening, you might not think straight. It's about getting people to do things they shouldn't do by being tricky. They want you to trust them or act quickly without really thinking.\n\nTo stop this, people need to be more careful online. Don't click on weird links. Use strong passwords. Companies should tell their employees to be alert. We need to teach people to be more aware of these attacks. Maybe some kind of training. Also, having good antivirus software is important for cybersecurity. If people are more careful, maybe they won't fall for these tricks so much.\n\nIt's really hard to stop social engineering because people are always going to be the weak link. You can't make everyone perfect. Hackers are always changing their ways, so it's a never-ending fight. There's no easy solution. It's just a big problem. The human part of security is really hard to fix because people aren't machines.",
+            "feedback": {
+                "c1": "Needs Improvement. Shows a surface-level and at times confused understanding. While some basic concepts are mentioned, the explanations lack precision and depth, with limited recognition of specific psychological principles. (5/10)",
+                "c2": "Needs Improvement. Examples provided are vague ('emails that look real,' 'call you too') and generic, lacking clear, specific links to distinct social engineering types or how concepts are applied. (20/40)",
+                "c3": "Needs Improvement. The critique is largely a restatement that 'people are the weak link' and 'it's hard to stop,' without offering any specific analysis of challenges, limitations, or trade-offs. (10/20)",
+                "c4": "Needs Improvement. The structure is somewhat disjointed, and the tone is inconsistent, leaning informal in places. While generally understandable, the writing lacks academic rigor, with some grammatical issues hindering clarity. (16/30)",
+                "total": "51/100"
+            }
+        },
+        {
+            "quality": "Poor",
+            "key_points": [
+                "Demonstrates major misunderstandings, conflating social engineering with general malware attacks.",
+                "Fails to identify or explain specific social engineering types or psychological principles.",
+                "No real-world application of social engineering concepts; examples are generic cybersecurity threats.",
+                "Offers irrelevant or basic technical advice instead of measures to enhance human resilience against manipulation.",
+                "Disorganized writing, informal tone, and numerous grammatical errors make the content unclear and off-topic."
+            ],
+            "llm_questions": [
+                "You mentioned 'hackers use viruses to get into your computer' as social engineering. Can you clarify the difference between a virus/malware attack and a social engineering attack?",
+                "What specific 'psychological' tactics do you think hackers use when they 'try to make you click' on a bad file?",
+                "You suggested 'change your password often, maybe every month.' Is this still considered best practice for cybersecurity, and why or why not?"
+            ],
+            "llm_answers": [
+                "A virus/malware attack primarily relies on technical vulnerabilities in software or systems to infect a computer. Social engineering, on the other hand, manipulates human behavior directly, tricking individuals into revealing information or performing actions that inadvertently aid the attacker, without necessarily using a direct technical exploit initially. They are distinct but can be combined.",
+                "In the context of actual social engineering, psychological tactics would involve creating a sense of urgency, impersonating authority, or appealing to curiosity or fear to induce a click. For example, a fake urgent email from a bank asking to 'verify your account immediately' exploits urgency and authority to get a click.",
+                "Regularly scheduled password changes (e.g., monthly) are no longer considered a cybersecurity best practice by many experts. The current recommendation focuses on using long, unique, complex passwords, preferably with a password manager, and enabling multi-factor authentication. Frequent changes often lead users to choose weaker, more predictable passwords or slight variations, making them easier to guess."
+            ],
+            "final_submission": "Cybersecurity is about keeping computers safe from bad stuff. Social engineering is part of that, I think. It's like when hackers use viruses to get into your computer. Sometimes they send you emails with a virus, and if you open it, your computer gets hacked. That's a social attack, I guess. People also get hacked through their phones or when they browse websites with malware. It's all about stopping the hackers from getting your information.\n\nHackers trick people by making them download bad files. They want your passwords. It's psychological because they try to make you click. If you don't know what to do, you might click on it. It's about tricking people into doing what they want, usually to steal money or data. This happens a lot in the news when companies get hacked.\n\nTo be safe, you need a good firewall and antivirus. Don't go to bad websites. Update your software. Don't click on attachments from people you don't know. Also, change your password often, maybe every month. If you see something weird, tell someone. Just be smart about your computer use.\n\nIt's impossible to completely stop hackers because they are always finding new ways. They are very clever. The internet is a dangerous place, so you just have to be careful. There's nothing really that can make people 100% safe. Computers always have vulnerabilities.",
+            "feedback": {
+                "c1": "Poor. Demonstrates major misunderstandings, conflating social engineering with general malware attacks and failing to define or explain relevant concepts accurately. The connection to 'psychological' aspects is rudimentary and misdirected. (3/10)",
+                "c2": "Poor. There is no real-world application specific to social engineering. The examples provided (viruses, malware, bad websites) pertain to general cybersecurity threats rather than human manipulation tactics. (10/40)",
+                "c3": "Poor. Offers no critical evaluation relevant to social engineering. The discussion focuses on general hacker cleverness and internet dangers, without analyzing challenges, limitations, or trade-offs specific to human vulnerabilities. (5/20)",
+                "c4": "Poor. The writing is disorganized, informal, and contains numerous grammatical errors and vague statements, making it difficult to follow and understand the intended meaning. It does not reflect academic writing standards. (12/30)",
+                "total": "30/100"
+            }
+        }
+    ]
+}

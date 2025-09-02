@@ -1,0 +1,223 @@
+{
+    "domain": "Information Technology",
+    "prompt": "IPv6 adoption: Why is the transition still slow? Discuss technical, operational, and organizational challenges delaying IPv6 uptake despite its advantages.",
+    "rubric": {
+        "rubric_id": "rub_it_0007",
+        "criteria": [
+            {
+                "criterion_id": "c1",
+                "name": "Conceptual Understanding",
+                "description": "Demonstrates deep understanding of the topic and related concepts.",
+                "performance_descriptors": {
+                    "excellent": "Shows precise and in-depth understanding with clear theoretical support.",
+                    "good": "Understands key concepts well with minor gaps.",
+                    "average": "Adequate explanation with some inaccuracies.",
+                    "needs_improvement": "Surface-level or confused understanding.",
+                    "poor": "Major misunderstandings or misrepresentations."
+                },
+                "weight": 15
+            },
+            {
+                "criterion_id": "c2",
+                "name": "Application to Real-World Scenarios",
+                "description": "Applies concepts meaningfully to examples or scenarios.",
+                "performance_descriptors": {
+                    "excellent": "Uses insightful and relevant examples clearly linked to concepts.",
+                    "good": "Examples mostly appropriate with some gaps in explanation.",
+                    "average": "Examples present but superficial or unclear connections.",
+                    "needs_improvement": "Vague or generic examples.",
+                    "poor": "No real-world application."
+                },
+                "weight": 25
+            },
+            {
+                "criterion_id": "c3",
+                "name": "Critical Evaluation",
+                "description": "Analyzes challenges, limitations, or trade-offs thoughtfully.",
+                "performance_descriptors": {
+                    "excellent": "Provides insightful, research-backed critical evaluation.",
+                    "good": "Reasonable evaluation but less depth.",
+                    "average": "Mentions challenges superficially.",
+                    "needs_improvement": "Unclear or irrelevant critique.",
+                    "poor": "No critical evaluation."
+                },
+                "weight": 35
+            },
+            {
+                "criterion_id": "c4",
+                "name": "Structure and Academic Writing",
+                "description": "Quality of writing, flow, citations, and tone.",
+                "performance_descriptors": {
+                    "excellent": "Clear, coherent, formal tone, flawless grammar, and proper referencing.",
+                    "good": "Mostly clear and professional; minor issues.",
+                    "average": "Organization present but inconsistent.",
+                    "needs_improvement": "Structure or tone hinder clarity; referencing weak.",
+                    "poor": "Disorganized or informal writing."
+                },
+                "weight": 25
+            }
+        ]
+    },
+    "submissions": [
+        {
+            "quality": "Excellent",
+            "key_points": [
+                "Comprehensive discussion of technical debt, particularly NAT's pervasive role.",
+                "Insightful analysis of economic disincentives and the 'chicken-and-egg' problem for content providers.",
+                "Strong examples, like the costs associated with dual-stacking complex enterprise networks.",
+                "Nuanced critique of organizational inertia and skill gaps within IT departments.",
+                "Exemplary academic writing with clear structure and formal tone."
+            ],
+            "llm_questions": [
+                "How does the concept of 'technical debt' specifically apply to IPv4 and its impact on IPv6 adoption?",
+                "What are the primary economic barriers preventing organizations from prioritizing IPv6 transition, even with its long-term benefits?",
+                "Beyond technical training, what organizational culture shifts are necessary to accelerate IPv6 integration?",
+                "The submission mentions the 'chicken-and-egg' problem. Can you elaborate on how this impacts both content providers and end-users?",
+                "Discuss a real-world example of a significant operational challenge faced by a large enterprise during its IPv6 transition."
+            ],
+            "llm_answers": [
+                "Technical debt in the context of IPv4 refers to the accumulated cost of relying on a mature but ultimately limited protocol, primarily through the widespread deployment of Network Address Translation (NAT). NAT solutions, while extending IPv4's lifespan, introduce complexity, break end-to-end connectivity, and create a dependency that becomes expensive and difficult to unwind when transitioning to IPv6. Enterprises have heavily invested in NAT-dependent infrastructure and operational processes, making a full switch to IPv6 a substantial, costly undertaking, much like refactoring old, poorly written code.",
+                "Primary economic barriers include the significant upfront capital expenditure for hardware upgrades (routers, firewalls, load balancers), the operational costs associated with maintaining a dual-stack environment (increased complexity, monitoring, troubleshooting), and the cost of retraining staff. Furthermore, the perceived lack of immediate, tangible business benefit or return on investment (ROI) for many organizations, especially those not experiencing IPv4 address exhaustion directly, means IPv6 projects often fall behind other initiatives that offer clearer competitive advantages or cost savings.",
+                "Beyond technical training, organizational culture shifts include fostering a proactive rather than reactive stance towards infrastructure upgrades, promoting cross-departmental collaboration (networking, security, application development), and integrating IPv6 planning into standard IT lifecycle management. Leadership buy-in is crucial to championing the transition as a strategic imperative, not just a technical task, overcoming inertia and fear of change.",
+                "The 'chicken-and-egg' problem describes the interdependence of content and client adoption. Content providers are hesitant to fully transition to IPv6 if a significant portion of their audience still relies on IPv4, fearing a loss of reach. Conversely, end-users and ISPs see less urgency in adopting IPv6 if their most frequently accessed content (e.g., major websites) is not yet fully available over IPv6. This creates a stalemate where neither side has a strong enough incentive to move first, slowing overall adoption.",
+                "A prominent operational challenge for large enterprises is managing the inventory and compatibility of legacy applications and systems. For instance, a global bank might have hundreds of mission-critical applications, some decades old, running on various operating systems and hardware. Ensuring each application's IPv6 compatibility, from database connections to third-party integrations, often requires extensive testing, code refactoring, and vendor engagement. This creates a long, complex, and resource-intensive project, delaying full operational transition and increasing risk."
+            ],
+            "final_submission": "The transition to IPv6, despite its myriad advantages such as a vastly expanded address space, improved routing efficiency, and enhanced security features, remains remarkably slow. This sluggish adoption can be attributed to a complex interplay of technical, operational, and organizational challenges that collectively create significant inertia. \n\nTechnically, the pervasive reliance on Network Address Translation (NAT) in IPv4 networks presents a major hurdle. NAT allowed organizations to circumvent IPv4 address exhaustion, effectively kicking the can down the road. However, it also introduced technical debt, making the direct move to an end-to-end connectable IPv6 environment more challenging and expensive than a clean slate deployment. Upgrading hardware and software to be IPv6-compliant, particularly within large, complex enterprise networks with diverse vendor equipment, is a substantial technical undertaking. Legacy systems, often deeply embedded and poorly documented, frequently lack native IPv6 support, requiring costly workarounds or complete overhauls. \n\nOperationally, the overhead of dual-stacking — running both IPv4 and IPv6 simultaneously — is a significant burden. This parallel operation doubles the management complexity for network administrators, requiring new monitoring tools, updated security policies, and specialized troubleshooting skills. The lack of experienced personnel proficient in IPv6 deployment and management exacerbates this issue. Furthermore, integrating IPv6 into existing security infrastructures, including firewalls, intrusion detection systems, and access control lists, demands meticulous planning and execution to avoid introducing new vulnerabilities. \n\nOrganizationally, the economic disincentives are profound. Many businesses perceive no immediate 'burning platform' to justify the substantial capital expenditure and operational costs of transitioning. The 'chicken-and-egg' problem means content providers are reluctant to fully enable IPv6 until more users are on it, while users see less reason to adopt IPv6 until more content is available. Leadership often struggles to define a clear Return on Investment (ROI) for IPv6 projects, prioritizing other initiatives that offer more tangible business benefits. Moreover, a lack of strategic vision and insufficient budget allocation within IT departments often mean IPv6 adoption is viewed as a compliance exercise rather than a strategic imperative for future network resilience and innovation. Without top-down organizational commitment, the technical and operational challenges become insurmountable, perpetually delaying the inevitable transition.",
+            "feedback": {
+                "c1": "Excellent. Shows precise and in-depth understanding, clearly articulating the nuanced interplay of technical debt, economic disincentives, and the 'chicken-and-egg' problem. (14/15)",
+                "c2": "Excellent. Uses insightful and relevant examples such as the costs associated with dual-stacking complex enterprise networks and the implications of legacy systems. (24/25)",
+                "c3": "Excellent. Provides a highly insightful and well-supported critical evaluation of challenges, including economic disincentives, organizational inertia, and the lack of a clear ROI. (33/35)",
+                "c4": "Excellent. The writing is clear, coherent, and maintains a formal academic tone throughout. Flawless grammar and strong argumentative flow are evident. (25/25)",
+                "total": "96/100"
+            }
+        },
+        {
+            "quality": "Good",
+            "key_points": [
+                "Good understanding of technical issues like NAT and dual-stacking.",
+                "Recognizes the importance of cost and the 'no immediate need' factor.",
+                "Provides generally appropriate examples, though some could be more specific.",
+                "Identifies skill gaps as an operational challenge.",
+                "Writing is mostly clear and professional, with minor stylistic points for improvement."
+            ],
+            "llm_questions": [
+                "What specific technical complexities arise from running a dual-stack network during the transition period?",
+                "How does the availability of NAT hinder the perceived urgency for organizations to adopt IPv6?",
+                "Beyond initial training, what ongoing support mechanisms are crucial for IT staff managing IPv6 environments?",
+                "Explain how the lack of a 'killer app' or unique IPv6-only service impacts adoption rates.",
+                "What role do government mandates or industry standards play in accelerating or delaying IPv6 transition?"
+            ],
+            "llm_answers": [
+                "Running a dual-stack network introduces complexities such as managing two separate sets of IP addresses, routing tables, DNS records, and firewall rules. This increases configuration errors, complicates network monitoring and troubleshooting, and demands greater administrative overhead. It also requires careful consideration of which protocol takes precedence, especially for application reachability, and ensuring smooth interoperability between IPv4 and IPv6 services and clients.",
+                "NAT significantly lowers the urgency for IPv6 adoption because it effectively mitigates the immediate problem of IPv4 address exhaustion for many organizations. By allowing multiple devices to share a single public IPv4 address, NAT defers the need to acquire new IPv4 space or transition to IPv6, removing a primary driver for change. If organizations aren't facing an address crunch, the motivation to invest in a potentially disruptive transition is diminished.",
+                "Ongoing support mechanisms crucial for IT staff include access to updated documentation, specialized knowledge bases for common IPv6 issues, community forums for peer support, and vendor technical support with strong IPv6 expertise. Regular refresher training, advanced certification programs, and internal IPv6 champions or dedicated teams can also provide valuable continuous learning and problem-solving resources.",
+                "The lack of a 'killer app' or unique IPv6-only service means that for most users and businesses, there isn't a compelling, must-have application or feature that *requires* IPv6. All essential services (web, email, streaming) are currently accessible over IPv4, offering no direct incentive to switch. Without a distinct advantage or an exclusive service only available via IPv6, the perceived benefit for early adoption is low, leading to a 'wait and see' approach.",
+                "Government mandates, such as those in the US and India requiring federal agencies to transition, can significantly accelerate adoption within specific sectors by creating a clear directive and funding. Similarly, industry standards bodies or large content providers (e.g., Google, Facebook) by enabling IPv6 for their services, can indirectly push adoption. Conversely, a lack of clear, consistent, or harmonized standards, or the absence of strong regulatory pressure, can allow organizations to delay, as there's no external force compelling the change."
+            ],
+            "final_submission": "The slow pace of IPv6 adoption, despite its clear advantages like expanded address space and better routing, stems from a combination of technical, operational, and organizational hurdles. Many of these challenges revolve around the inertia created by the existing IPv4 infrastructure.\n\nFrom a technical perspective, the widespread use of Network Address Translation (NAT) has served as a temporary solution to IPv4 address exhaustion, thereby reducing the immediate pressure to switch. This has created a vast installed base of NAT-dependent devices and configurations that are costly and complex to replace or reconfigure for IPv6. Furthermore, the necessity of running networks in a dual-stack mode (supporting both IPv4 and IPv6) during transition adds significant technical complexity, requiring parallel configurations for routing, DNS, and security systems. Compatibility issues with legacy hardware and software, which may not fully support IPv6, also contribute to the technical difficulties, often requiring expensive upgrades or workarounds.\n\nOperationally, the transition demands a substantial investment in training for IT staff. Many network engineers are highly skilled in IPv4 but lack the practical experience and deep understanding required for effective IPv6 deployment, troubleshooting, and security management. The increased complexity of managing a dual-stack network can lead to operational overhead, potential misconfigurations, and longer resolution times for network issues. Moreover, integrating IPv6 into existing monitoring and management tools often requires new software or adaptations, adding another layer of operational challenge.\n\nOrganizationally, the primary barrier is often the perceived lack of a compelling business driver. For many organizations, as long as IPv4 continues to meet their needs, the significant financial investment in hardware, software, and training for IPv6 seems unwarranted. There's often no clear Return on Investment (ROI) that leadership can easily justify, especially when facing other competing IT priorities. The 'chicken-and-egg' problem, where content providers wait for more users and users wait for more content, further slows adoption. Without strong internal advocacy or external mandates, IPv6 projects frequently remain low on the organizational priority list, resulting in a prolonged and hesitant transition.",
+            "feedback": {
+                "c1": "Excellent. Understands key concepts well, clearly explaining NAT's role and dual-stack complexity. (13/15)",
+                "c2": "Good. Provides appropriate examples, such as the need for parallel configurations and training for IT staff, though some could delve deeper into specific scenarios. (20/25)",
+                "c3": "Good. Offers reasonable critical evaluation, identifying the 'no immediate need' and economic factors, but could benefit from more detailed analysis of trade-offs. (27/35)",
+                "c4": "Excellent. Mostly clear and professional writing; minor issues are present but do not significantly detract from clarity or tone. (23/25)",
+                "total": "83/100"
+            }
+        },
+        {
+            "quality": "Average",
+            "key_points": [
+                "Adequate explanation of basic IPv6 advantages and slow adoption.",
+                "Mentions key challenges like cost and complexity, but superficially.",
+                "Examples are present but generic, lacking specific details.",
+                "Highlights the need for new equipment and staff training.",
+                "Writing is organized but inconsistent in clarity and formality."
+            ],
+            "llm_questions": [
+                "What are the main advantages of IPv6 over IPv4 that are not being fully realized due to slow adoption?",
+                "How does the cost of new hardware directly contribute to organizations delaying their IPv6 transition?",
+                "What is dual-stacking, and why is it a necessary but challenging part of the IPv6 transition?",
+                "Name two types of organizations that might feel more pressure to adopt IPv6 compared to others.",
+                "What role does public awareness (or lack thereof) play in the slow uptake of IPv6?"
+            ],
+            "llm_answers": [
+                "The main advantages of IPv6 not being fully realized include its vast address space, which eliminates the need for NAT and enables true end-to-end connectivity; improved efficiency due to simplified header formats and better routing mechanisms; enhanced security features like built-in IPsec; and better support for mobile and IoT devices, which require unique, routable addresses.",
+                "The cost of new hardware contributes to delays because many existing network devices (routers, switches, firewalls) in an organization's infrastructure might not be fully IPv6-compatible. Replacing or upgrading this equipment represents a significant capital expenditure, especially for large enterprises, leading them to defer the transition until equipment naturally reaches end-of-life or a compelling business case emerges.",
+                "Dual-stacking is the technique of running both IPv4 and IPv6 protocols simultaneously on network devices and hosts. It's necessary because the internet is not transitioning overnight, and devices need to communicate with both IPv4-only and IPv6-only resources. It's challenging because it essentially doubles the configuration, management, and troubleshooting workload for network administrators, adding complexity to the entire network environment.",
+                "Two types of organizations that might feel more pressure to adopt IPv6 are: 1) Internet Service Providers (ISPs) who are directly impacted by IPv4 address exhaustion and need to assign addresses to new customers, and 2) Large government agencies or educational institutions that often have mandates or strategic plans requiring IPv6 adoption for future network growth and innovation.",
+                "The general public's lack of awareness about IPv6 plays a role because it means there's little external pressure on content providers or service providers to accelerate their transition. Most users don't directly perceive the benefits or drawbacks of one IP version over another, as long as their internet access works. This low public demand removes a significant incentive for businesses to prioritize IPv6 deployment."
+            ],
+            "final_submission": "IPv6 is the next generation internet protocol, designed to replace IPv4. It has many benefits like a much larger address space, which means every device can have its own unique address. However, the move to IPv6 is still happening very slowly. There are several reasons for this delay, involving technical, operational, and organizational issues.\n\nFrom a technical standpoint, a big challenge is that most of the internet still runs on IPv4. Organizations have invested a lot in their current IPv4 networks, using technologies like NAT (Network Address Translation) to save addresses. Switching to IPv6 means they might need to buy new equipment or upgrade existing systems, which can be expensive and complicated. Also, running both IPv4 and IPv6 at the same time, known as dual-stacking, adds complexity to the network because you have to manage two different sets of rules and configurations.\n\nOperationally, businesses face challenges with their staff. Many IT professionals are experts in IPv4 but don't have enough training or experience with IPv6. This means companies need to spend time and money training their employees, which can be a slow process. Managing a dual-stack network also requires more effort and different skills for monitoring and troubleshooting, leading to potential operational headaches and increased workload.\n\nOrganizationally, the biggest reason for slow adoption is often a lack of perceived urgency or a clear business case. For many companies, their current IPv4 setup works fine, and they don't see an immediate need to invest in a costly and complex transition. They might not see a direct return on investment (ROI) for adopting IPv6, especially when there are other IT projects that seem more critical to their business goals. Also, content providers are hesitant to fully support IPv6 if most users are still on IPv4, and users don't demand IPv6 if their favorite content isn't on it, creating a waiting game. This lack of a strong push from either side keeps the transition at a crawl.",
+            "feedback": {
+                "c1": "Average. Adequate explanation of basic concepts and challenges, but lacks the depth and precision found in higher-quality submissions. (10/15)",
+                "c2": "Average. Examples are present (e.g., needing new equipment, staff training) but remain generic and do not demonstrate deep application to specific real-world scenarios. (16/25)",
+                "c3": "Average. Mentions challenges like cost and lack of urgency superficially, without offering a thoughtful or research-backed critical evaluation. (21/35)",
+                "c4": "Average. Organization is present but inconsistent in terms of clarity and formality. There are some minor grammatical issues. (18/25)",
+                "total": "65/100"
+            }
+        },
+        {
+            "quality": "Needs Improvement",
+            "key_points": [
+                "Surface-level understanding of IPv6 benefits and transition issues.",
+                "Mentions some challenges like cost and knowledge gaps, but vaguely.",
+                "Examples are generic or missing, making connections unclear.",
+                "Lacks critical analysis, mostly listing issues without depth.",
+                "Structure is present but clarity suffers from inconsistent writing and tone."
+            ],
+            "llm_questions": [
+                "What is the most significant technical problem when trying to move from IPv4 to IPv6?",
+                "Why do some companies not want to spend money on IPv6 right now?",
+                "What kind of training do IT people need for IPv6?",
+                "How can the government help speed up IPv6 adoption?",
+                "What are the 'advantages' of IPv6 that the prompt mentions?"
+            ],
+            "llm_answers": [
+                "The most significant technical problem is dealing with all the old IPv4 stuff, like routers and software, that isn't ready for IPv6. It's hard to make everything work together or replace it all without breaking things, and it costs a lot.",
+                "Some companies don't want to spend money on IPv6 because their current internet (IPv4) still works for them. They don't see an urgent reason or a clear way to get more business or save money by switching, so they'd rather spend their budget on other things.",
+                "IT people need training on how IPv6 addresses work, how to set up IPv6 networks, how to make sure security systems understand IPv6, and how to fix problems that happen with IPv6. It's like learning a whole new language for networks.",
+                "Governments can help by making rules or policies that say government agencies must use IPv6. They can also offer incentives like grants or tax breaks for companies that switch, or help fund training programs for IT professionals.",
+                "The advantages of IPv6 include having a lot more unique internet addresses so we don't run out, which helps new devices connect. It also has features that can make the internet work a bit faster and potentially more securely, built into the protocol itself."
+            ],
+            "final_submission": "The move from IPv4 to IPv6 is slow, even though IPv6 is supposed to be better. There are several reasons why companies and people are not switching faster. These problems can be grouped into technical, operational, and organizational challenges.\n\nTechnically, one big issue is that everyone is used to IPv4. A lot of old equipment and software only works with IPv4. So, if you want to use IPv6, you might have to buy new devices or update everything, which can be expensive and tricky. Also, networks have to run both IPv4 and IPv6 at the same time during the transition, which makes things more complicated. This 'dual-stack' approach can be hard to manage and troubleshoot, especially for larger networks with many devices.\n\nOperationally, the main problem is that IT staff are often not ready for IPv6. They know IPv4 very well, but they haven't had enough training or experience with the new protocol. This means companies need to invest in training their employees, and that takes time and money. Without skilled people, it's hard to implement and maintain an IPv6 network effectively. This can lead to mistakes and slower problem-solving when issues arise with the new system.\n\nOrganizationally, many businesses simply don't see a strong reason to switch. Their IPv4 networks are working, and they don't feel an immediate threat from IPv4 address exhaustion. There isn't a clear 'must-have' reason or a big new service that only works with IPv6. This means that leadership doesn't prioritize it, and budgets are often allocated to other projects that promise a more immediate benefit to the business. Everyone is waiting for someone else to make the first big move, which just keeps things slow. It's a low priority for many, so they just stick with what they know.",
+            "feedback": {
+                "c1": "Needs Improvement. Demonstrates a surface-level understanding. While some correct points are made, they lack precision and theoretical depth. (8/15)",
+                "c2": "Needs Improvement. Examples are vague and generic (e.g., 'old equipment,' 'new devices') and do not clearly link to specific, insightful scenarios. (12/25)",
+                "c3": "Needs Improvement. The critique is superficial, mostly listing challenges without a thoughtful analysis of their implications or trade-offs. (17/35)",
+                "c4": "Needs Improvement. The structure is rudimentary, and the tone is inconsistent. Grammar and clarity issues sometimes hinder understanding. (14/25)",
+                "total": "51/100"
+            }
+        },
+        {
+            "quality": "Poor",
+            "key_points": [
+                "Very basic and sometimes confused understanding of IPv6.",
+                "Misrepresents some core concepts or provides incorrect information.",
+                "Lacks specific examples or relevant applications.",
+                "No critical evaluation, just a simple restatement of problems.",
+                "Writing is disorganized, informal, and contains significant errors."
+            ],
+            "llm_questions": [
+                "What is IPv6 meant to fix about IPv4?",
+                "Why is it hard for companies to just switch over to IPv6?",
+                "What's a 'dual-stack' and why is it part of IPv6 transition?",
+                "Do you think IPv6 will ever fully replace IPv4?",
+                "What kind of 'organizational challenges' are there for IPv6?"
+            ],
+            "llm_answers": [
+                "IPv6 is meant to fix the problem of running out of internet addresses because IPv4 has too few. It also tries to make the internet faster and more secure, but mostly it's about getting more addresses.",
+                "It's hard because companies have old networks that only understand IPv4, so they need to get new stuff or update everything, which takes a lot of money and time. It's like changing all the roads in a city at once.",
+                "A 'dual-stack' means running both IPv4 and IPv6 at the same time. It's part of the transition because not everyone switches at once, so networks need to be able to talk to both old and new systems. It's a temporary step.",
+                "It's hard to say if IPv6 will *ever* fully replace IPv4. It might take a very, very long time, maybe never completely, as some old systems might always remain. But the internet will mostly run on IPv6 eventually.",
+                "Organizational challenges are mostly about companies not wanting to spend money or effort on something that's not urgent. They don't see a big benefit right now, and they don't want to train their staff for it."
+            ],
+            "final_submission": "IPv6 is the new internet protocol, supposed to replace the old IPv4. But it's not happening fast. There are a few reasons for this. It's about how the internet works and how companies operate.\n\nFirst, technically, a big problem is that IPv4 is everywhere. All the computers and phones use IPv4. So, switching to IPv6 means everything needs to change. This is very hard. Companies have a lot of old internet boxes, like routers, and they don't understand IPv6. So, you have to buy new ones, which costs a lot of money. Also, for a while, networks need to run both IPv4 and IPv6 together. This is called 'dual-stacking' and it makes things very confusing and hard to manage. It's like having two different road systems that sometimes cross over.\n\nSecond, operationally, the people who work with computers don't know IPv6. They are good at IPv4, but IPv6 is different. So, companies need to teach their staff how to use IPv6, and this takes a lot of time and money. If the staff makes mistakes because they don't know IPv6 well, it can break the internet for the company. So, they just stick with what they know. It's easier that way.\n\nThird, organizationally, companies don't see why they need to change. Their internet works fine with IPv4. There's no big new thing that only uses IPv6. So, the bosses don't want to spend money or time on it. They have other, more important things to do. Everyone is waiting for someone else to make the first move, but nobody does. This means IPv6 adoption stays very slow because there's no real reason for anyone to rush into it. It's not a priority for most businesses because it doesn't give them a clear advantage right now.",
+            "feedback": {
+                "c1": "Poor. Demonstrates major misunderstandings (e.g., 'all the computers and phones use IPv4') and a very superficial, sometimes inaccurate, explanation of concepts. (5/15)",
+                "c2": "Poor. Provides no real-world application or specific examples, relying on generic statements like 'old internet boxes.' (8/25)",
+                "c3": "Poor. There is no critical evaluation; the submission merely restates problems without analysis or insight into limitations or trade-offs. (10/35)",
+                "c4": "Poor. The writing is disorganized, informal, and contains significant grammatical errors and awkward phrasing that hinder clarity. (7/25)",
+                "total": "30/100"
+            }
+        }
+    ]
+}
